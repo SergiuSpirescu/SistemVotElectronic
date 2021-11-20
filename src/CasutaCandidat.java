@@ -16,4 +16,15 @@ public class CasutaCandidat {
         return filepathLogo;
     }
 
+    public void setNumeCandidat(String numeCandidat) {
+        this.numeCandidat = numeCandidat;
+    }
+
+    public void setNumePartid(String numePartid) {
+        this.numePartid = numePartid;
+    }
+
+    public void setFilepathLogo(String filepathLogo) {
+        this.filepathLogo = filepathLogo;
+    }
 }

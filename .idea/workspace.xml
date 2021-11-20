@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CasutaCandidat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CasutaPartid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CasutaCandidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CasutaCandidat.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +78,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637419141962</updated>
-      <workItem from="1637419149067" duration="1098000" />
+      <workItem from="1637419149067" duration="1385000" />
     </task>
+    <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
+      <created>1637420299137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637420299137</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +108,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/SistemVotElectronic" />
     </ignored-roots>
+    <MESSAGE value="Creat noua clasa CasutaCandidat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creat noua clasa CasutaCandidat" />
   </component>
 </project>
