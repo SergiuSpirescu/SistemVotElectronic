@@ -16,7 +16,7 @@ public class Start extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FereastraPrincipala.fxml"));
         primaryStage.setTitle("Vot Electronic");
-        primaryStage.setScene(new Scene(root, 300 ,300));
+        primaryStage.setScene(new Scene(root,700,780));
         primaryStage.show();
     }
 }
