@@ -13,7 +13,6 @@
             alignment="CENTER">
 
 
-
     <Label fx:id="labelSectieVot" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
