@@ -9,18 +9,18 @@
 <GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="FereastraPrincipala"
-            prefHeight="700.0" prefWidth="800.0"
+            prefHeight="1000.0" prefWidth="1000.0"
             alignment="CENTER">
 
 
 
-    <Label fx:id="labelSectieVot" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER" textAlignment="CENTER" >
+    <Label fx:id="labelSectieVot" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
-    <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER" textAlignment="CENTER">
+    <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
-    <Button text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="CENTER">
+    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="RIGHT">
     </Button>
 
 </GridPane>
