@@ -25,4 +25,7 @@ public class FereastraPrincipala implements Initializable {
         labelSectieVot.setText("Bun venit la Sectia de votare #" + Integer.toString(12345) + "\n");
     }
 
+    public void onStartButtonClicked() {
+        System.out.println("A inceput votul.");
+    }
 }

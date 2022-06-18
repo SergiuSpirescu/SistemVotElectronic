@@ -19,7 +19,8 @@
     <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
-    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="RIGHT">
+    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="RIGHT"
+    onAction="#onStartButtonClicked">
     </Button>
 
 </GridPane>
