@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/FereastraPrincipala.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FereastraPrincipala.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FereastraPrincipala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,10 +40,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-18.0.1/lib/javafx.web.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -56,8 +60,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Start" />
       <module name="SistemVotElectronic" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-18.0.1\lib&quot; --add-modules=&quot;javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.fxml,javafx.web&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637419141962</updated>
       <workItem from="1637419149067" duration="1385000" />
+      <workItem from="1655561658496" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
@@ -98,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
