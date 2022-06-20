@@ -17,6 +17,7 @@ public class Start extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FereastraPrincipala.fxml"));
         primaryStage.setTitle("Vot Electronic");
         primaryStage.setScene(new Scene(root,800,800));
+        primaryStage.setMaximized(true);
         primaryStage.show();
     }
 }

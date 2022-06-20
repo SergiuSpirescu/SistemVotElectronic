@@ -6,11 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <GridPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="FereastraPrincipala"
-            prefHeight="1000.0" prefWidth="1000.0"
-            alignment="CENTER">
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="FereastraPrincipala"
+          prefHeight="1000.0" prefWidth="1000.0"
+          alignment="CENTER">
 
 
     <Label fx:id="labelSectieVot" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER" textAlignment="CENTER">
@@ -21,6 +23,17 @@
 
     <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="RIGHT"
     onAction="#onStartButtonClicked">
+    </Button>
+
+    <Label fx:id="votInceput" GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER" textAlignment="RIGHT"> </Label>
+
+    <Button fx:id="exitButton" text=""  GridPane.rowIndex="4" GridPane.columnIndex="0"
+    onAction="#onExitButton">
+    <graphic>
+        <ImageView>
+            <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
+        </ImageView>
+    </graphic>
     </Button>
 
 </GridPane>

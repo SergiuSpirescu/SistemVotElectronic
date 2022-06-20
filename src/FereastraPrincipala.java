@@ -16,6 +16,9 @@ public class FereastraPrincipala implements Initializable {
     @FXML
     private Button startButton = new Button();
 
+    @FXML
+    private Label votInceput = new Label("");
+
     public void setIdSectieVot(int idSectieVot) {
         this.idSectieVot = idSectieVot;
     }
@@ -27,5 +30,10 @@ public class FereastraPrincipala implements Initializable {
 
     public void onStartButtonClicked() {
         System.out.println("A inceput votul.");
+        votInceput.setText("A inceput votul.");
+    }
+
+    public void onExitButton(){
+        System.exit(0);
     }
 }
