@@ -11,7 +11,7 @@ public class FereastraPrincipala implements Initializable {
 
     private int idSectieVot;
     @FXML
-    private Label labelSectieVot = new Label("Bun venit la Sectia de votare");
+    private Label labelSectieVot = new Label("");
 
     @FXML
     private Button startButton = new Button();
@@ -34,6 +34,7 @@ public class FereastraPrincipala implements Initializable {
     }
 
     public void onExitButton(){
+        System.out.println("Aplicatie oprita din buton . . .");
         System.exit(0);
     }
 }

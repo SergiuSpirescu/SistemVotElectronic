@@ -8,26 +8,27 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<GridPane xmlns="http://javafx.com/javafx"
+<AnchorPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="FereastraPrincipala"
-          prefHeight="1000.0" prefWidth="1000.0"
-          alignment="CENTER">
+          prefHeight="1000.0" prefWidth="1000.0">
 
-
-    <Label fx:id="labelSectieVot" GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="CENTER" textAlignment="CENTER">
+<GridPane AnchorPane.topAnchor="500.0">
+    <Label fx:id="labelSectieVot" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
-    <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" textAlignment="CENTER">
+    <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" alignment="CENTER" textAlignment="CENTER">
     </Label>
 
-    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" textAlignment="RIGHT"
+    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" alignment="CENTER" textAlignment="RIGHT"
     onAction="#onStartButtonClicked">
     </Button>
 
-    <Label fx:id="votInceput" GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER" textAlignment="RIGHT"> </Label>
+    <Label fx:id="votInceput" alignment="CENTER" textAlignment="RIGHT"> </Label>
 
-    <Button fx:id="exitButton" text=""  GridPane.rowIndex="4" GridPane.columnIndex="0"
+</GridPane>
+
+    <Button fx:id="exitButton" text=""  AnchorPane.rightAnchor="0.0" alignment="TOP_RIGHT"
     onAction="#onExitButton">
     <graphic>
         <ImageView>
@@ -36,4 +37,4 @@
     </graphic>
     </Button>
 
-</GridPane>
+</AnchorPane>
