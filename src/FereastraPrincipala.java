@@ -29,6 +29,7 @@ public class FereastraPrincipala implements Initializable {
     }
 
     public void onStartButtonClicked() {
+
         System.out.println("A inceput votul.");
         votInceput.setText("A inceput votul.");
     }
