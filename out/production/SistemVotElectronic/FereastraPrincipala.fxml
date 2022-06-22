@@ -8,33 +8,43 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
-          fx:controller="FereastraPrincipala"
-          prefHeight="1000.0" prefWidth="1000.0">
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FereastraPrincipala"
+            prefHeight="1000.0" prefWidth="1000.0">
+    <top>
+        <Button fx:id="exitButton" text="" BorderPane.alignment="CENTER_RIGHT" alignment="CENTER_RIGHT" onAction="#onExitButton"
+                style="-fx-border-color: BLUE">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </top>
 
-<GridPane AnchorPane.topAnchor="200.0" AnchorPane.rightAnchor="200.0" alignment="CENTER">
-    <Label fx:id="labelSectieVot" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" alignment="CENTER" textAlignment="CENTER">
-    </Label>
+    <bottom>
+        <GridPane BorderPane.alignment="CENTER" style="-fx-border-color: BLUE">
+            <Label fx:id="labelSectieVot" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS"
+                   alignment="CENTER" textAlignment="CENTER">
+            </Label>
 
-    <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" textAlignment="CENTER">
-    </Label>
+            <Label text="Apasati pe butonul de mai jos pentru a incepe!" GridPane.rowIndex="1" GridPane.columnIndex="0"
+                   GridPane.hgrow="ALWAYS" textAlignment="CENTER">
+            </Label>
 
-    <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" textAlignment="RIGHT"
-    onAction="#onStartButtonClicked">
-    </Button>
+            <Button fx:id="startButton" text="Incepe Sesiunea de Vot" GridPane.rowIndex="2" GridPane.columnIndex="0"
+                    GridPane.hgrow="ALWAYS" textAlignment="RIGHT"
+                    onAction="#onStartButtonClicked">
+            </Button>
 
-    <Label fx:id="votInceput" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" textAlignment="RIGHT"> </Label>
+            <Label fx:id="votInceput" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS"
+                   textAlignment="RIGHT">
+            </Label>
+        </GridPane>
+    </bottom>
+    <bottom>
 
-</GridPane>
-
-    <Button fx:id="exitButton" text=""  AnchorPane.rightAnchor="0.0" alignment="TOP_RIGHT"
-    onAction="#onExitButton">
-    <graphic>
-        <ImageView>
-            <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
-        </ImageView>
-    </graphic>
-    </Button>
-
-</AnchorPane>
+    </bottom>
+</BorderPane>
