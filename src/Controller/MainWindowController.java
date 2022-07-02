@@ -4,11 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
@@ -49,12 +51,12 @@ public class MainWindowController implements Initializable {
 
     public void switchToVoteSessionView(ActionEvent event) throws IOException {
 
+        Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         Parent sessionRoot = FXMLLoader.load(getClass().getResource("../View/VoteSessionView.fxml"));
-        Scene sessionScene = new Scene(sessionRoot);
-
+        Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Vot Electronic");
-        stage.setMaximized(false);
+        stage.setMaximized(true);
         stage.setScene(sessionScene);
         stage.show();
     }
