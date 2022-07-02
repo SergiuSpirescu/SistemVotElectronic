@@ -1,15 +1,20 @@
 package Controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
+import javafx.stage.Stage;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
-
 
     private int idSectieVot;
     @FXML
@@ -34,10 +39,24 @@ public class MainWindowController implements Initializable {
 
         System.out.println("A inceput votul.");
         votInceput.setText("A inceput votul.");
+//        switchToVoteSessionView();
     }
 
     public void onExitButton(){
-        System.out.println("Aplicatie oprita din buton . . .");
+        System.out.println("Aplicatie oprita din buton . . . " + "Main Window");
         System.exit(0);
     }
+
+    public void switchToVoteSessionView(ActionEvent event) throws IOException {
+
+        Parent sessionRoot = FXMLLoader.load(getClass().getResource("../View/VoteSessionView.fxml"));
+        Scene sessionScene = new Scene(sessionRoot);
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Vot Electronic");
+        stage.setMaximized(false);
+        stage.setScene(sessionScene);
+        stage.show();
+    }
+
 }
