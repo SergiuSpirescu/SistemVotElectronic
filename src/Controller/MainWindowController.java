@@ -51,6 +51,8 @@ public class MainWindowController implements Initializable {
 
     public void switchToVoteSessionView(ActionEvent event) throws IOException {
 
+//        onStartButtonClicked();
+
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         Parent sessionRoot = FXMLLoader.load(getClass().getResource("../View/VoteSessionView.fxml"));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());

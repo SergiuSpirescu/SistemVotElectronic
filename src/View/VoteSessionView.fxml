@@ -12,7 +12,8 @@
             prefHeight="1000.0" prefWidth="1000.0">
 
     <top>
-        <Button fx:id="exitButton" BorderPane.alignment="CENTER_RIGHT" alignment="CENTER_RIGHT" onAction="#onExitButton" style="-fx-border-color: BLUE" text="">
+        <Button fx:id="exitButton" BorderPane.alignment="CENTER_RIGHT" alignment="CENTER_RIGHT" onAction="#onExitButton"
+                style="-fx-border-color: BLUE" text="">
             <graphic>
                 <ImageView>
                     <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
@@ -23,11 +24,13 @@
 
     <center>
         <VBox BorderPane.alignment="CENTER">
-        <GridPane>
-            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Sesiune Vot"/>
-            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView" onAction="#switchToBallotView"/>
+            <GridPane>
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Sesiune Vot"/>
+                <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView"
+                        onAction="#switchToBallotView"/>
+
+            </GridPane>
         </VBox>
-        </GridPane>
     </center>
 
 
