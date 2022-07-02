@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/FereastraPrincipala.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/FereastraPrincipala.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FereastraPrincipala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +43,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
