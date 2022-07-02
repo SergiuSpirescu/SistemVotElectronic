@@ -6,9 +6,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.VoteExitController"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="Controller.VoteExitController">
 
-</AnchorPane>
+    <top>
+        <Button fx:id="exitButton" BorderPane.alignment="CENTER_RIGHT" alignment="CENTER_RIGHT" onAction="#onExitButton" style="-fx-border-color: BLUE" text="">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </top>
+
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+        <GridPane>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Iesire Vot"/>
+            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView" onAction="#switchToMainView"/>
+        </GridPane>
+        </VBox>
+    </center>
+
+</BorderPane>

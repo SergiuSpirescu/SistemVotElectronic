@@ -22,8 +22,11 @@
     </top>
 
     <center>
+        <VBox BorderPane.alignment="CENTER">
         <GridPane>
             <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Sesiune Vot"/>
+            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView" onAction="#switchToBallotView"/>
+        </VBox>
         </GridPane>
     </center>
 
