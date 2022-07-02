@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FereastraPrincipala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MainWindowView.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

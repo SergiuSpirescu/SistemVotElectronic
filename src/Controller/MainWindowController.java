@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class FereastraPrincipala implements Initializable {
+public class MainWindowController implements Initializable {
 
 
     private int idSectieVot;

@@ -9,7 +9,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.FereastraPrincipala"
+            fx:controller="Controller.MainWindowController"
             prefHeight="1000.0" prefWidth="1000.0">
 
     <top>
