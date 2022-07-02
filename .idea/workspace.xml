@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/FereastraPrincipala.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/FereastraPrincipala.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FereastraPrincipala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FereastraPrincipala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +44,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-18.0.1/lib/javafx.web.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jlfgr-1_0.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,6 +96,8 @@
       <updated>1637419141962</updated>
       <workItem from="1637419149067" duration="1385000" />
       <workItem from="1655561658496" duration="336000" />
+      <workItem from="1655740098523" duration="4099000" />
+      <workItem from="1655909216885" duration="4344000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>

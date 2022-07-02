@@ -1,7 +1,9 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public class Start extends Application {
@@ -14,9 +16,12 @@ public class Start extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FereastraPrincipala.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("View/MainWindowView.fxml"));
+
+        Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         primaryStage.setTitle("Vot Electronic");
-        primaryStage.setScene(new Scene(root,800,800));I
+        primaryStage.setScene(new Scene(root,screenSize.getWidth(),screenSize.getHeight()));
+        primaryStage.setMaximized(true);
         primaryStage.show();
     }
 }
