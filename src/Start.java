@@ -14,7 +14,7 @@ public class Start extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FereastraPrincipala.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("View/FereastraPrincipala.fxml"));
         primaryStage.setTitle("Vot Electronic");
         primaryStage.setScene(new Scene(root,1080,1080));
         primaryStage.setMaximized(true);
