@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteExitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteExitView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BuletinVot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BuletinVot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CasutaCandidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CandidateBallot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CasutaPartid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PartyBallot.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

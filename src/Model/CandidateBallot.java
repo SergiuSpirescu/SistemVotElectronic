@@ -1,4 +1,6 @@
-public class CasutaCandidat {
+package Model;
+
+public class CandidateBallot {
 
     private String numeCandidat;
     private String numePartid;

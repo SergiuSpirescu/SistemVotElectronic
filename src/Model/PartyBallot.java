@@ -1,4 +1,6 @@
-public class CasutaPartid {
+package Model;
+
+public class PartyBallot {
 
     private String numePartid;
 

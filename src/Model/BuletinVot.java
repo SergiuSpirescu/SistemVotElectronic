@@ -1,4 +1,6 @@
-public class BuletinVot {
+package Model;
+
+public interface IBallot {
 
     private String titlu;
 
