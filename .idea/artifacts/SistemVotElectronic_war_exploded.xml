@@ -7,9 +7,7 @@
         <element id="directory" name="classes">
           <element id="module-output" name="SistemVotElectronic" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="AppEngine API" />
-        </element>
+        <element id="directory" name="lib" />
       </element>
     </root>
   </artifact>
