@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BuletinVot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BuletinVot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CasutaCandidat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CandidateBallot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CasutaPartid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PartyBallot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Ballot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BaseCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BaseCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ListCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/NominalCandidate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +94,7 @@
       <workItem from="1655561658496" duration="336000" />
       <workItem from="1655740098523" duration="4099000" />
       <workItem from="1655909216885" duration="4344000" />
+      <workItem from="1658165061832" duration="477000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>

@@ -1,14 +1,12 @@
 package Model;
 
-public class ListCandidate {
+import java.util.ArrayList;
 
-    private String numePartid;
+public class ListCandidate extends BaseCandidate {
 
-    public String getNumePartid() {
-        return numePartid;
-    }
+    ArrayList<String> candidateNameList;
 
-    public void setNumePartid(String numePartid) {
-        this.numePartid = numePartid;
+    ArrayList<String> getCandidateNameList() {
+        return candidateNameList;
     }
 }

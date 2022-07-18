@@ -1,17 +1,23 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class BaseCandidate {
 
-    private String numeCandidat;
+    private ArrayList<String> candidateName;
+    private int position;
+    private int listSize;
 
-
-    public String getNumeCandidat() {
-        return numeCandidat;
+    public ArrayList<String> getCandidateName() {
+        return this.candidateName;
     }
 
-    public void setNumeCandidat(String numeCandidat) {
-        this.numeCandidat = numeCandidat;
+    public void setCandidateName(String candidateName) {
+        this.candidateName.add(candidateName);
     }
-    
+
+    public int getPosition() {
+        return this.position;
     }
 }
+
