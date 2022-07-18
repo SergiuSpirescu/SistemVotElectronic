@@ -1,6 +1,6 @@
 package Model;
 
-public class PartyBallot {
+public class ListCandidate {
 
     private String numePartid;
 
