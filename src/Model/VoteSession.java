@@ -2,9 +2,22 @@ package Model;
 
 import java.util.ArrayList;
 
+
+//Singleton Class
 public class VoteSession {
 
-    String sessionName; //id read from JSON
+    private String sessionName; //id read from JSON
+    private VoteSession theInstance;
+
+    public VoteSession() {}
+
+    public VoteSession getVoteSession() {
+        if (theInstance == null) {
+            theInstance = new VoteSession();
+        }
+        return theInstance;
+    }
+
 
     ArrayList<Ballot> voteBallots;
 
@@ -16,5 +29,4 @@ public class VoteSession {
         return this.sessionName;
     }
 
-    
 }
