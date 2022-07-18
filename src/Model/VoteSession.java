@@ -6,10 +6,12 @@ import java.util.ArrayList;
 //Singleton Class
 public class VoteSession {
 
+    private static VoteSession theInstance = null; // Singleton instance
     private String sessionName; //id read from JSON
-    private VoteSession theInstance;
+    ArrayList<Ballot> voteBallots;
 
-    public VoteSession() {}
+
+    private VoteSession() {}
 
     public VoteSession getVoteSession() {
         if (theInstance == null) {
@@ -18,8 +20,6 @@ public class VoteSession {
         return theInstance;
     }
 
-
-    ArrayList<Ballot> voteBallots;
 
     private void setSessionName(String sessionName) {
         this.sessionName = sessionName;
