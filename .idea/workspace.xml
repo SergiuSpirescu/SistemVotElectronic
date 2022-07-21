@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/Data Inputs/SessionData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +17,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -36,6 +39,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jlfgr-1_0.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,7 +93,8 @@
       <workItem from="1655561658496" duration="336000" />
       <workItem from="1655740098523" duration="4099000" />
       <workItem from="1655909216885" duration="4344000" />
-      <workItem from="1658165061832" duration="1770000" />
+      <workItem from="1658165061832" duration="2673000" />
+      <workItem from="1658421208262" duration="758000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
