@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/BaseCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BaseCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/NominalCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemVotElectronic.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,9 +37,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -130,7 +128,7 @@
       <workItem from="1655909216885" duration="4344000" />
       <workItem from="1658165061832" duration="2673000" />
       <workItem from="1658421208262" duration="758000" />
-      <workItem from="1658769788343" duration="1849000" />
+      <workItem from="1658769788343" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
