@@ -4,16 +4,13 @@ import java.util.ArrayList;
 
 public class BaseCandidate {
 
-    private ArrayList<String> candidateName;
     private int position;
     private int listSize;
+    private String partyName;
 
-    public ArrayList<String> getCandidateName() {
-        return this.candidateName;
-    }
-
-    public void setCandidateName(String candidateName) {
-        this.candidateName.add(candidateName);
+    public BaseCandidate(int position, String partyName) {
+        this.position = position;
+        this.partyName = partyName;
     }
 
     public int getPosition() {

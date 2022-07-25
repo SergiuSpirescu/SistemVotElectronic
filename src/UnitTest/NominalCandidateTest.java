@@ -2,17 +2,10 @@ package UnitTest;
 
 import Model.BaseCandidate;
 import Model.NominalCandidate;
-import org.junit.Assert;
-import org.junit.Before;
 
 import static org.junit.Assert.*;
 
-public class NominalCandidateTest extends BaseCandidate {
-
-    @Before
-    public void initValues() {
-
-    }
+public class NominalCandidateTest {
 
     @org.junit.Test
     public void testGetCandidateName() {
@@ -30,8 +23,7 @@ public class NominalCandidateTest extends BaseCandidate {
     @org.junit.Test
     public void testGetPosition() {
         NominalCandidate candidate = new NominalCandidate("Full Candidate Name", 5, "Java Party");
-        assertEquals(5,candidate.getPosition());
+        assertEquals(5, candidate.getPosition());
 
-        }
     }
 }
