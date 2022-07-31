@@ -2,6 +2,7 @@ package UnitTest;
 
 import Model.BaseCandidate;
 import Model.NominalCandidate;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -26,4 +27,5 @@ public class NominalCandidateTest {
         assertEquals(5, candidate.getPosition());
 
     }
+
 }
