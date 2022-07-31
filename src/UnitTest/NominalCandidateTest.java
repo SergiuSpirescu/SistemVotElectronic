@@ -1,6 +1,3 @@
-package UnitTest;
-
-import Model.BaseCandidate;
 import Model.NominalCandidate;
 
 import static org.junit.Assert.*;
