@@ -9,10 +9,7 @@ import static org.junit.Assert.*;
 
 public class VoteSessionTest {
 
-    @Before
-    public void setUp() throws Exception {
-        static VoteSession testVoteSessionInstance = VoteSession.getInstance();
-    }
+    private static VoteSession testVoteSessionInstance = VoteSession.getInstance();
 
     @After
     public void tearDown() throws Exception {
