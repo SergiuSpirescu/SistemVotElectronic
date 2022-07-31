@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemVotElectronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/artifacts/SistemVotElectronic_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/libraries/javafx_base.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/libraries/javafx_swt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/architecture/Main Flow.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,13 +99,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="JUnit.Model in SistemVotElectronic">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Start" />
       <module name="SistemVotElectronic" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-18.0.1\lib&quot; --add-modules=&quot;javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.fxml,javafx.web&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Model in SistemVotElectronic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemVotElectronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Model in SistemVotElectronic" />
         <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
@@ -170,5 +200,13 @@
     </ignored-roots>
     <MESSAGE value="Creat noua clasa CasutaCandidat" />
     <option name="LAST_COMMIT_MESSAGE" value="Creat noua clasa CasutaCandidat" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SistemVotElectronic$Model_in_SistemVotElectronic.ic" NAME="Model in SistemVotElectronic Coverage Results" MODIFIED="1659260095521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SistemVotElectronic$NominalCandidateTest.ic" NAME="NominalCandidateTest Coverage Results" MODIFIED="1659260057199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTest.*</FILTER>
+    </SUITE>
   </component>
 </project>

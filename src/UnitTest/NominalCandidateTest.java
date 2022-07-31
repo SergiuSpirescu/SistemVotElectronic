@@ -27,5 +27,13 @@ public class NominalCandidateTest {
 
     }
 
+    @Test
+    public void testSetPosition() {
+        NominalCandidate candidate = new NominalCandidate("Full Candidate Name", 0, "Java Party");
+        candidate.setPosition(8);
+        assertEquals(8,candidate.getPosition());
+
+    }
+
 
 }
