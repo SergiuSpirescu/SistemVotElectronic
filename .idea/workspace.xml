@@ -66,6 +66,13 @@
       <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn validate" />
+      <command value="mvn compile" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -78,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NominalCandidateTest">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -129,6 +136,7 @@
       <workItem from="1658165061832" duration="2673000" />
       <workItem from="1658421208262" duration="758000" />
       <workItem from="1658769788343" duration="2526000" />
+      <workItem from="1658944393641" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
