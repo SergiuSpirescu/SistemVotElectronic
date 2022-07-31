@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.VoteExitController">
+
+    <top>
+        <Button fx:id="exitButton" BorderPane.alignment="CENTER_RIGHT" alignment="CENTER_RIGHT" onAction="#onExitButton" style="-fx-border-color: BLUE" text="">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/media/Stop24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </top>
+
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+        <GridPane>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Iesire Vot"/>
+            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView" onAction="#switchToMainView"/>
+        </GridPane>
+        </VBox>
+    </center>
+
+</BorderPane>

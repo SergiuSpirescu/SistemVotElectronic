@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteExitView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,9 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="package.json" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -41,19 +45,42 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="Model.BaseCandidate" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="Model.BaseCandidate" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jlfgr-1_0.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="UnitTest" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="Model.BaseCandidate" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn validate" />
+      <command value="mvn compile" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -67,13 +94,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Start" />
       <module name="SistemVotElectronic" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-18.0.1\lib&quot; --add-modules=&quot;javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.fxml,javafx.web&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NominalCandidateTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="SistemVotElectronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.NominalCandidateTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +142,10 @@
       <workItem from="1655561658496" duration="336000" />
       <workItem from="1655740098523" duration="4099000" />
       <workItem from="1655909216885" duration="4344000" />
+      <workItem from="1658165061832" duration="2673000" />
+      <workItem from="1658421208262" duration="758000" />
+      <workItem from="1658769788343" duration="2526000" />
+      <workItem from="1658944393641" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
