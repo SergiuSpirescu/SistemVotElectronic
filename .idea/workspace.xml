@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +45,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="Model.BaseCandidate" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="Model.BaseCandidate" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jlfgr-1_0.jar!/" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/UnitTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/Data Inputs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -59,7 +61,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="UnitTest" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
       <recent name="Model.BaseCandidate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -85,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NominalCandidateTest">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -138,6 +144,11 @@
       <workItem from="1658769788343" duration="2526000" />
       <workItem from="1658944393641" duration="328000" />
       <workItem from="1659259040085" duration="63000" />
+      <workItem from="1659262078533" duration="815000" />
+      <workItem from="1659281099928" duration="1506000" />
+      <workItem from="1659296573097" duration="81000" />
+      <workItem from="1659364845356" duration="331000" />
+      <workItem from="1661187417530" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>

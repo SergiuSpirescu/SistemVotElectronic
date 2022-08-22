@@ -1,0 +1,40 @@
+{
+  "voteSessionID": "123456",
+  "voteSessionName": "SAMPLE Prezidentiale 2025",
+  "numberOfBallots": 1,
+  "ballotList": [
+    {
+      "ballotType": "Nominal",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "USR",
+          "candidatesList": [
+            "BARNA ILIE-DAN"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "PMP",
+          "candidatesList": [
+            "PALEOLOGU THEODOR"
+          ]
+        },
+        {
+          "positionCount": 3,
+          "partyName": "PNL",
+          "candidatesList": [
+            "IOHANNIS KLAUS-WERNER"
+          ]
+        },
+        {
+          "positionCount": 3,
+          "partyName": "INDEPENDENT",
+          "candidatesList": [
+            "MARIAN-STANOEVICI BOGDAN-DRAGOȘ-AURELIU"
+          ]
+        }
+      ]
+    }
+  ]
+}
