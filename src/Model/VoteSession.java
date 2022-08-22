@@ -8,9 +8,10 @@ import java.util.ArrayList;
 public class VoteSession {
 
     private static VoteSession theInstance = null; // Singleton instance
-    private static String sessionName; //name rad from JSON
-    private static String precintID; //id read from JSON
-    private static ArrayList<Ballot> voteBallots;
+    private String sessionName; //name read from JSON
+    private String precintID; //id read from JSON
+    private ArrayList<Ballot> voteBallots;
+    public boolean isInitialized = false;
 
 
     private VoteSession() {
@@ -23,27 +24,11 @@ public class VoteSession {
     public static VoteSession getInstance() {
         if (theInstance == null) {
             theInstance = new VoteSession();
-            initSession();
         }
         return theInstance;
     }
 
-    //for testing purposes
-    public static VoteSession getInstance(boolean test, String precintId, String sessionName) {
-
-        if (theInstance == null) {
-            theInstance = new VoteSession();
-            if (!test) {
-                initSession();
-            } else {
-                setPrecintID(precintId);
-                setSessionName(sessionName);
-            }
-        }
-        return theInstance;
-    }
-
-    private static void initSession(){
+    public void initSession(){
 
         String sesName;
         String precID;
@@ -61,22 +46,29 @@ public class VoteSession {
 //        setSessionName(sesName);
 //        setPrecintID(precID);
 
-    }
+        setSessionName("Test Session Name");
+        setPrecintID("Test Precint ID");
 
-    private static void setSessionName(String sessionName) {
-        sessionName = sessionName;
-    }
+        this.isInitialized = true;
 
-    private static void setPrecintID(String precintID) {
-        precintID = precintID;
     }
 
     public String getSessionName() {
         return this.sessionName;
     }
 
+    private void setSessionName(String sessionName) {
+        this.sessionName = sessionName;
+    }
+
     public String getPrecintID() {
+
         return precintID;
+    }
+
+    private void setPrecintID(String precintID)
+    {
+        this.precintID = precintID;
     }
 
 }

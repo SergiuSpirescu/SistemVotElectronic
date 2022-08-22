@@ -2,15 +2,22 @@ package UnitTest;
 
 import Model.VoteSession;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-
 import org.junit.Before;
 import org.junit.Test;
 
 public class VoteSessionTest {
 
 
-        VoteSession testVoteSessionInstance = VoteSession.getInstance(true, "Test Precint ID", "Test Session Name");
+//        VoteSession testVoteSessionInstance = null;
+     VoteSession testVoteSessionInstance = VoteSession.getInstance();
+
+        @Before
+        public void setup() {
+            if (testVoteSessionInstance.isInitialized != true)
+            {
+                testVoteSessionInstance.initSession();
+            }
+        }
 
         @Test
         public void testGetSessionName() {
