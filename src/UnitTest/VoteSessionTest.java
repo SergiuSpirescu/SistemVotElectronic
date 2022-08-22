@@ -1,11 +1,7 @@
-package UnitTest;
-
 import Model.VoteSession;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class VoteSessionTest {
 
@@ -13,9 +9,10 @@ public class VoteSessionTest {
     @Before
     public void setUp() throws Exception {
 
-        private static VoteSession testVoteSessionInstance = VoteSession.getInstance(false);
-        testVoteSessionInstance.setSessionName("Test Session Name");
-        testVoteSessionInstance.setPrecintID("Test ID");
+        VoteSession testVoteSessionInstance = VoteSession.getInstance(false);
+
+//        testVoteSessionInstance.setSessionName("Test Session Name");
+//        testVoteSessionInstance.setPrecintID("Test ID");
         
     }
 

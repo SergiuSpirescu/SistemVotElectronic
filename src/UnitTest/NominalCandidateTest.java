@@ -1,5 +1,3 @@
-package UnitTest;
-
 import Model.NominalCandidate;
 import org.junit.Test;
 

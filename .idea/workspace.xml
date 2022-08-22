@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemVotElectronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,15 +65,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="UnitTest" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="Model.BaseCandidate" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -106,12 +113,12 @@
       <module name="SistemVotElectronic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.NominalCandidateTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NominalCandidateTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />

@@ -20,7 +20,7 @@ public class VoteSession {
         this.voteBallots = new ArrayList<>();
     }
 
-    public VoteSession getInstance() {
+    public static VoteSession getInstance() {
         if (theInstance == null) {
             theInstance = new VoteSession();
             initSession();
@@ -28,7 +28,19 @@ public class VoteSession {
         return theInstance;
     }
 
-    private void initSession(){
+    //for testing purposes
+    public static VoteSession getInstance(boolean test) {
+
+        if (theInstance == null) {
+            theInstance = new VoteSession();
+            if (test) {
+                initSession();
+            }
+        }
+        return theInstance;
+    }
+
+    private static void initSession(){
 
         String sesName;
         String precID;
@@ -52,16 +64,16 @@ public class VoteSession {
         this.sessionName = sessionName;
     }
 
+    private void setPrecintID(String precintID) {
+        this.precintID = precintID;
+    }
+
     public String getSessionName() {
         return this.sessionName;
     }
 
     public String getPrecintID() {
         return precintID;
-    }
-
-    public void setPrecintID(String precintID) {
-        this.precintID = precintID;
     }
 
 }
