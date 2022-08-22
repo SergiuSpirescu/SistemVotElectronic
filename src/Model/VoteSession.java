@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class VoteSession {
 
     private static VoteSession theInstance = null; // Singleton instance
-    private String sessionName; //id read from JSON
-    private String precintID;
-    ArrayList<Ballot> voteBallots;
+    private static String sessionName; //name rad from JSON
+    private static String precintID; //id read from JSON
+    private static ArrayList<Ballot> voteBallots;
 
 
     private VoteSession() {
@@ -29,12 +29,15 @@ public class VoteSession {
     }
 
     //for testing purposes
-    public static VoteSession getInstance(boolean test) {
+    public static VoteSession getInstance(boolean test, String precintId, String sessionName) {
 
         if (theInstance == null) {
             theInstance = new VoteSession();
-            if (test) {
+            if (!test) {
                 initSession();
+            } else {
+                setPrecintID(precintId);
+                setSessionName(sessionName);
             }
         }
         return theInstance;
@@ -60,12 +63,12 @@ public class VoteSession {
 
     }
 
-    private void setSessionName(String sessionName) {
-        this.sessionName = sessionName;
+    private static void setSessionName(String sessionName) {
+        sessionName = sessionName;
     }
 
-    private void setPrecintID(String precintID) {
-        this.precintID = precintID;
+    private static void setPrecintID(String precintID) {
+        precintID = precintID;
     }
 
     public String getSessionName() {

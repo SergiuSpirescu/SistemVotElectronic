@@ -1,37 +1,25 @@
+package UnitTest;
+
 import Model.VoteSession;
-import org.junit.After;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+
 import org.junit.Before;
 import org.junit.Test;
 
 public class VoteSessionTest {
 
 
-    @Before
-    public void setUp() throws Exception {
+        VoteSession testVoteSessionInstance = VoteSession.getInstance(true, "Test Precint ID", "Test Session Name");
 
-        VoteSession testVoteSessionInstance = VoteSession.getInstance(false);
+        @Test
+        public void testGetSessionName() {
+            assertEquals("Test Session Name", testVoteSessionInstance.getSessionName());
+        }
 
-//        testVoteSessionInstance.setSessionName("Test Session Name");
-//        testVoteSessionInstance.setPrecintID("Test ID");
-        
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    @Test
-    public void getInstance() {
+        @Test
+        public void testGetPrecintID() {
+            assertEquals("Test Precint ID", testVoteSessionInstance.getPrecintID());
+        }
 
     }
-
-    @Test
-    public void getSessionName() {
-
-    }
-
-    @Test
-    public void getPrecintID() {
-    }
-
-}

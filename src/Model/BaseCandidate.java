@@ -16,5 +16,9 @@ public class BaseCandidate {
     public int getPosition() {
         return this.position;
     }
+
+    public void setPosition(int pos) {
+        this.position = pos;
+    }
 }
 
