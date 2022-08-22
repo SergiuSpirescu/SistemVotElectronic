@@ -9,7 +9,15 @@ import static org.junit.Assert.*;
 
 public class VoteSessionTest {
 
-    private static VoteSession testVoteSessionInstance = VoteSession.getInstance();
+
+    @Before
+    public void setUp() throws Exception {
+
+        private static VoteSession testVoteSessionInstance = VoteSession.getInstance(false);
+        testVoteSessionInstance.setSessionName("Test Session Name");
+        testVoteSessionInstance.setPrecintID("Test ID");
+        
+    }
 
     @After
     public void tearDown() throws Exception {
@@ -17,17 +25,16 @@ public class VoteSessionTest {
 
     @Test
     public void getInstance() {
+
     }
 
     @Test
     public void getSessionName() {
+
     }
 
     @Test
     public void getPrecintID() {
     }
 
-    @Test
-    public void setPrecintID() {
-    }
 }

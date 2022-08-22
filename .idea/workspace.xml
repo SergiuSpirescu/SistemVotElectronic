@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/Data Inputs/SessionDataSample-Parliament.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Data Inputs/SessionDataSample-Presidential.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/resources/Data Inputs/SessionData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Data Inputs/SessionData.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,7 +145,10 @@
       <workItem from="1658944393641" duration="328000" />
       <workItem from="1659259040085" duration="63000" />
       <workItem from="1659262078533" duration="815000" />
-      <workItem from="1659281099928" duration="1234000" />
+      <workItem from="1659281099928" duration="1506000" />
+      <workItem from="1659296573097" duration="81000" />
+      <workItem from="1659364845356" duration="331000" />
+      <workItem from="1661187417530" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
