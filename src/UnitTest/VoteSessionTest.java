@@ -1,7 +1,11 @@
 package UnitTest;
 
+import Model.SessionFetchAPI;
 import Model.VoteSession;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,9 +17,12 @@ public class VoteSessionTest {
 
         @Before
         public void setup() {
+            SessionFetchAPI simulateAPI = mock(SessionFetchAPI.class);
+            when(simulateAPI.initSession()).thenReturn(0);
+
             if (testVoteSessionInstance.isInitialized != true)
             {
-                testVoteSessionInstance.initSession();
+                simulateAPI.initSession(testVoteSessionInstance);
             }
         }
 
@@ -29,4 +36,8 @@ public class VoteSessionTest {
             assertEquals("Test Precint ID", testVoteSessionInstance.getPrecintID());
         }
 
+        @After
+        public void cleanup() {
+            testVoteSessionInstance = null;
+        }
     }
