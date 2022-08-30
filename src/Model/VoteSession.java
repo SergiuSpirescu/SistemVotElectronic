@@ -1,17 +1,18 @@
 package Model;
 
-import java.io.BufferedReader;
 import java.util.ArrayList;
-
+import com.fasterxml.jackson.core.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 
 //Singleton Class
 public class VoteSession {
 
     private static VoteSession theInstance = null; // Singleton instance
+    public boolean isInitialized = false;
     private String sessionName; //name read from JSON
     private String precintID; //id read from JSON
     private ArrayList<Ballot> voteBallots;
-    public boolean isInitialized = false;
 
 
     private VoteSession() {
@@ -28,11 +29,15 @@ public class VoteSession {
         return theInstance;
     }
 
-    public void initSession(){
+    public void initSession() {
 
         String sesName;
         String precID;
+
+        ObjectMapper jsonContainer = new ObjectMapper();
+
         //Establish connection to data source
+
 
 
 
@@ -66,8 +71,7 @@ public class VoteSession {
         return precintID;
     }
 
-    private void setPrecintID(String precintID)
-    {
+    private void setPrecintID(String precintID) {
         this.precintID = precintID;
     }
 

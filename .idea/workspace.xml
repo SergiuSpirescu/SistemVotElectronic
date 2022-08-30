@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/SessionFetchAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UnitTest/ListCandidateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemVotElectronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ListCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +107,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListCandidateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemVotElectronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.ListCandidateTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NominalCandidateTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="SistemVotElectronic" />
       <extension name="coverage">
@@ -134,20 +151,6 @@
       <option name="MAIN_CLASS_NAME" value="UnitTest.NominalCandidateTest" />
       <option name="METHOD_NAME" value="testSetPosition" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnitTest in SistemVotElectronic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,10 +189,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Start" />
+        <item itemvalue="JUnit.ListCandidateTest" />
         <item itemvalue="JUnit.VoteSessionTest" />
         <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
         <item itemvalue="JUnit.NominalCandidateTest.testSetPosition" />
-        <item itemvalue="JUnit.UnitTest in SistemVotElectronic" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +220,9 @@
       <workItem from="1659296573097" duration="81000" />
       <workItem from="1659364845356" duration="331000" />
       <workItem from="1661187417530" duration="478000" />
-      <workItem from="1661356657254" duration="1226000" />
+      <workItem from="1661356657254" duration="1287000" />
+      <workItem from="1661873946667" duration="594000" />
+      <workItem from="1661874796655" duration="2212000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>

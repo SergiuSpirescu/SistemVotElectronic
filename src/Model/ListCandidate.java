@@ -11,5 +11,7 @@ public class ListCandidate extends BaseCandidate {
       this.candidateNameList = nameList;
   }
 
-
+    public ArrayList<String> getCandidateNameList() {
+        return candidateNameList;
+    }
 }

@@ -18,11 +18,11 @@ public class VoteSessionTest {
         @Before
         public void setup() {
             SessionFetchAPI simulateAPI = mock(SessionFetchAPI.class);
-            when(simulateAPI.initSession()).thenReturn(0);
+            simulateAPI.initSession();
 
             if (testVoteSessionInstance.isInitialized != true)
             {
-                simulateAPI.initSession(testVoteSessionInstance);
+                simulateAPI.initSession();
             }
         }
 
