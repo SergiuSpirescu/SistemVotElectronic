@@ -1,9 +1,8 @@
 package Model;
 
-import java.util.ArrayList;
-import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
+
+import java.util.ArrayList;
 
 //Singleton Class
 public class VoteSession {
@@ -34,8 +33,6 @@ public class VoteSession {
 
         String sesName;
         String precID;
-
-        ObjectMapper jsonContainer = new ObjectMapper();
 
         //Establish connection to data source
 
