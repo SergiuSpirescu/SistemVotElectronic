@@ -92,28 +92,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VoteSessionTest.testGetSessionName">
+  <component name="RunManager" selected="JUnit.VoteSessionTest.testGetNumberOfBallots">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Start" />
       <module name="SistemVotElectronic" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-18.0.1\lib&quot; --add-modules=&quot;javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.fxml,javafx.web&quot;" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListCandidateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.ListCandidateTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +131,22 @@
       <option name="PACKAGE_NAME" value="UnitTest" />
       <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoteSessionTest.testGetNumberOfBallots" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemVotElectronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
+      <option name="METHOD_NAME" value="testGetNumberOfBallots" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VoteSessionTest.testGetNumberOfBallots" />
         <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
         <item itemvalue="JUnit.VoteSessionTest.testGetSessionID" />
         <item itemvalue="JUnit.VoteSessionTest" />
         <item itemvalue="Application.Start" />
-        <item itemvalue="JUnit.ListCandidateTest" />
       </list>
     </recent_temporary>
   </component>

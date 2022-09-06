@@ -51,6 +51,11 @@ public class VoteSessionTest {
            assertNotNull(ballots);
         }
 
+        @Test
+        public void testGetNumberOfBallots() {
+            assertEquals(1, testVoteSessionInstance.getNumberOfBallots());
+        }
+
         @After
         public void cleanup() {
             testVoteSessionInstance = null;

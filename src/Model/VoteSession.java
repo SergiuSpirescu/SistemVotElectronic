@@ -12,6 +12,7 @@ public class VoteSession {
     public boolean isInitialized = false;
     private String sessionName; //name read from JSON
     private String sessionID; //id read from JSON
+    private int numberOfBallots;
     private ArrayList<Ballot> voteBallots;
 
 
@@ -73,5 +74,13 @@ public class VoteSession {
     }
     public String getSessionID() {
         return this.sessionID;
+    }
+
+    public void setNumberOfBallots(int number) {
+        this.numberOfBallots = number;
+    }
+
+    public int getNumberOfBallots() {
+        return this.numberOfBallots;
     }
 }
