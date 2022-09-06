@@ -36,19 +36,27 @@ public class JsonReader {
         }
 
         if (mainNode.has("ballotList")) {
-            JsonNode ballotNode = mainNode.get("ballotList");
+
+
 
             Ballot ballotContainer = new Ballot();
 
-            ballotContainer.setBallotType(ballotNode.get("ballotType").asText());
 
-            //Nominal or List Ballot ?
-            if (ballotContainer.getBallotType().equals("Nominal")) {
+            final int numberOfBallots = mainNode.get("numberOfBallots").asInt();
 
-                //Nominal Ballot means parsing just one String as candidate name
-                //First create Node inside the candidate json
+            for (int i=0; i <= numberOfBallots; i++) {
+
+
+                //Nominal or List Ballot ?
+                if (ballotContainer.getBallotType().equals("Nominal")) {
+
+                    JsonNode ballotNode = mainNode.get("ballotList");
+                    ballotContainer.setBallotType(ballotNode.get("ballotType").asText());
+                    //Nominal Ballot means parsing just one String as candidate name
+                    //First create Node inside the candidate json
 
                 JsonNode candidateNode = ballotNode.get("candidateList");
+                }
 
             }
 
