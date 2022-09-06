@@ -1,28 +1,28 @@
 package UnitTest;
 
-import Model.SessionFetchAPI;
+import Controller.JSONHandler.JsonReader;
+
 import Model.VoteSession;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
+
 
 public class VoteSessionTest {
 
 
-//        VoteSession testVoteSessionInstance = null;
      VoteSession testVoteSessionInstance = VoteSession.getInstance();
 
         @Before
         public void setup() {
-            SessionFetchAPI simulateAPI = mock(SessionFetchAPI.class);
-            simulateAPI.initSession();
+            String sourceFile = "resources/Data Inputs/SessionDataSample-Parliament.json";
 
             if (testVoteSessionInstance.isInitialized != true)
             {
-                simulateAPI.initSession();
+                JsonReader.initSession(sourceFile, testVoteSessionInstance);
             }
         }
 
@@ -32,8 +32,8 @@ public class VoteSessionTest {
         }
 
         @Test
-        public void testGetPrecintID() {
-            assertEquals("Test Precint ID", testVoteSessionInstance.getPrecintID());
+        @Ignore("Not implemented")
+        public void testGetSessionID() {
         }
 
         @After

@@ -1,0 +1,40 @@
+{
+  "voteSessionID": "135799",
+  "voteSessionName": "Test Session Name",
+  "numberOfBallots": 1,
+  "ballotList": [
+    {
+      "ballotType": "List",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "USR",
+          "namesList": [
+            "BARNA ILIE-DAN", "VOICULESCU VLAD", "NASUI CLAUDIU", "PRUNA RALUCA"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "PMP",
+          "namesList": [
+            "PALEOLOGU THEODOR", "BRANZA ADRIAN", "BASESCU TRAIAN", "UDREA LENUTA"
+          ]
+        },
+        {
+          "positionCount": 3,
+          "partyName": "PNL",
+          "namesList": [
+            "IOHANNIS KLAUS-WERNER", "AURESCU BOGDAN", "CITU FLORIN", "ORBAN LUDOVIC"
+          ]
+        },
+        {
+          "positionCount": 4,
+          "partyName": "PCdM",
+          "namesList": [
+            "NASTASE FLORIN", "SPORICI DAN", "MINA MIHAI", "SPIRESCU SERGIU-MARIUS"
+          ]
+        }
+      ]
+    }
+  ]
+}
