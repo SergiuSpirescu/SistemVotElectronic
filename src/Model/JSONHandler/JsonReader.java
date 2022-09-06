@@ -5,15 +5,17 @@ import Model.Ballot;
 import Model.BaseCandidate;
 import Model.VoteSession;
 import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
 
+
 public class JsonReader {
 
-    static ObjectMapper mapper = new ObjectMapper();
+    private static ObjectMapper mapper = new ObjectMapper();
 
     public static void initSession(String dataSource, VoteSession session) throws IOException {
 
@@ -37,28 +39,11 @@ public class JsonReader {
 
         if (mainNode.has("ballotList")) {
 
-
-
-            Ballot ballotContainer = new Ballot();
-
-
+           JsonNode ballotNode = mainNode.path("ballotList");
             final int numberOfBallots = mainNode.get("numberOfBallots").asInt();
 
-            for (int i=0; i <= numberOfBallots; i++) {
 
 
-                //Nominal or List Ballot ?
-                if (ballotContainer.getBallotType().equals("Nominal")) {
-
-                    JsonNode ballotNode = mainNode.get("ballotList");
-                    ballotContainer.setBallotType(ballotNode.get("ballotType").asText());
-                    //Nominal Ballot means parsing just one String as candidate name
-                    //First create Node inside the candidate json
-
-                JsonNode candidateNode = ballotNode.get("candidateList");
-                }
-
-            }
 
 
         }
