@@ -6,11 +6,13 @@ import Model.JSONHandler.JsonReader;
 import Model.VoteSession;
 import static org.junit.Assert.*;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -25,7 +27,11 @@ public class VoteSessionTest {
 
             if (testVoteSessionInstance.isInitialized != true)
             {
-                JsonReader.initSession(sourceFile, testVoteSessionInstance);
+                try {
+                    JsonReader.initSession(sourceFile, testVoteSessionInstance);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 

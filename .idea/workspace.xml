@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VoteSessionTest">
+  <component name="RunManager" selected="JUnit.VoteSessionTest.testGetSessionID">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -136,22 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NominalCandidateTest.testSetPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.NominalCandidateTest" />
-      <option name="METHOD_NAME" value="testSetPosition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="VoteSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SistemVotElectronic" />
       <extension name="coverage">
@@ -163,6 +148,22 @@
       <option name="PACKAGE_NAME" value="UnitTest" />
       <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoteSessionTest.testGetSessionID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SistemVotElectronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
+      <option name="METHOD_NAME" value="testGetSessionID" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VoteSessionTest.testGetSessionID" />
+        <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
         <item itemvalue="JUnit.VoteSessionTest" />
         <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.ListCandidateTest" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
-        <item itemvalue="JUnit.NominalCandidateTest.testSetPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,7 @@
       <workItem from="1661356657254" duration="1287000" />
       <workItem from="1661873946667" duration="594000" />
       <workItem from="1661874796655" duration="2451000" />
-      <workItem from="1662471132722" duration="2015000" />
+      <workItem from="1662471132722" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
