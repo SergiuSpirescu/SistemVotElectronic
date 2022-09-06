@@ -65,6 +65,10 @@ public class VoteSession {
         this.sessionName = sessionName;
     }
 
+    public void addBallot(Ballot ballot) {
+        voteBallots.add(ballot);
+    }
+
     public ArrayList<Ballot> getVoteBallots() {
         return this.voteBallots;
     }

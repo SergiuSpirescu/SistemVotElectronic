@@ -1,12 +1,15 @@
 package Model.JSONHandler;
 
+import Model.Ballot;
 import Model.VoteSession;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Type;
 
 public class JsonReader {
 
@@ -32,7 +35,15 @@ public class JsonReader {
             session.setNumberOfBallots(mainNode.get("numberOfBallots").asInt(-1));
         }
 
-        
+        if (mainNode.has("ballotList")) {
+            session.addBallot(mapper.readValue(file, new TypeReference<Ballot>() {
+                @Override
+                public Type getType() {
+                    return super.getType();
+                }
+            }));
+        }
+
 
     }
 
