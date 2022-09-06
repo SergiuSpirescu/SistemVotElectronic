@@ -62,7 +62,7 @@ public class VoteSession {
         return this.sessionName;
     }
 
-    private void setSessionName(String sessionName) {
+    public void setSessionName(String sessionName) {
         this.sessionName = sessionName;
     }
 
@@ -71,7 +71,7 @@ public class VoteSession {
         return precintID;
     }
 
-    private void setPrecintID(String precintID) {
+    public void setPrecintID(String precintID) {
         this.precintID = precintID;
     }
 

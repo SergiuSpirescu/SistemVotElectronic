@@ -1,6 +1,7 @@
 package UnitTest;
 
-import Controller.JSONHandler.JsonReader;
+import Model.Ballot;
+import Model.JSONHandler.JsonReader;
 
 import Model.VoteSession;
 import static org.junit.Assert.*;
@@ -10,6 +11,8 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 
 public class VoteSessionTest {
 
@@ -18,7 +21,7 @@ public class VoteSessionTest {
 
         @Before
         public void setup() {
-            String sourceFile = "resources/Data Inputs/SessionDataSample-Parliament.json";
+            String sourceFile = "resources/Data Inputs/simpleDataFile.json";
 
             if (testVoteSessionInstance.isInitialized != true)
             {
@@ -34,6 +37,16 @@ public class VoteSessionTest {
         @Test
         @Ignore("Not implemented")
         public void testGetSessionID() {
+        }
+
+        @Test
+        @Ignore("Not implemented")
+        public void testBallotListItems() {
+           ArrayList<Ballot> ballots = testVoteSessionInstance.getVoteBallots();
+
+           assertNotNull(ballots);
+           System.out.println(ballots);
+
         }
 
         @After

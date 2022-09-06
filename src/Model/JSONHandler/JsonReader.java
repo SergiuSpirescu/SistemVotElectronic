@@ -1,4 +1,4 @@
-package Controller.JSONHandler;
+package Model.JSONHandler;
 
 import Model.VoteSession;
 import com.fasterxml.jackson.databind.ObjectMapper;

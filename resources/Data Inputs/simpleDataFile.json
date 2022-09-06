@@ -1,0 +1,26 @@
+{
+  "voteSessionID": "123456",
+  "voteSessionName": "Test Session Name",
+  "numberOfBallots": 1,
+  "ballotList": [
+    {
+      "ballotType": "List",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "Party1",
+          "namesList": [
+            "Name1", "Name2"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "Party2",
+          "namesList": [
+            "Name3", "Name4"
+          ]
+        }
+      ]
+    }
+  ]
+}
