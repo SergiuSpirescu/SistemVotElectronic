@@ -21,8 +21,14 @@ public class JsonReader {
         JsonNode mainNode = mapper.readTree(file);
 
         if (mainNode.has("voteSessionID")) {
-            session.setSessionID(mainNode.get("voteSessionID").asText());
+            session.setSessionID(mainNode.get("voteSessionID").asText("N/A"));
         }
+
+        if (mainNode.has("voteSessionName")) {
+            session.setSessionName(mainNode.get("voteSessionName").asText("N/A"));
+        }
+
+
 
     }
 
