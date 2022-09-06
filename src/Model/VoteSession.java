@@ -11,14 +11,14 @@ public class VoteSession {
     private static VoteSession theInstance = null; // Singleton instance
     public boolean isInitialized = false;
     private String sessionName; //name read from JSON
-    private String precintID; //id read from JSON
+    private String sessionID; //id read from JSON
     private ArrayList<Ballot> voteBallots;
 
 
     private VoteSession() {
 
         this.sessionName = "";
-        this.precintID = "";
+        this.sessionID = "";
         this.voteBallots = new ArrayList<>();
     }
 
@@ -39,8 +39,6 @@ public class VoteSession {
         //Establish connection to data source
 
 
-
-
         //Fetch Data
 
 
@@ -52,7 +50,7 @@ public class VoteSession {
 //        setPrecintID(precID);
 
         setSessionName("Test Session Name");
-        setPrecintID("Test Precint ID");
+        setSessionID("Test Precint ID");
 
         this.isInitialized = true;
 
@@ -66,13 +64,14 @@ public class VoteSession {
         this.sessionName = sessionName;
     }
 
-    public String getPrecintID() {
-
-        return precintID;
+    public ArrayList<Ballot> getVoteBallots() {
+        return this.voteBallots;
     }
 
-    public void setPrecintID(String precintID) {
-        this.precintID = precintID;
+    public void setSessionID(String id) {
+        this.sessionID = id;
     }
-
+    public String getSessionID() {
+        return this.sessionID;
+    }
 }

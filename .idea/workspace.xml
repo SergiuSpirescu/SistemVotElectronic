@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/Data Inputs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Data Inputs/simpleDataFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
@@ -95,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NominalCandidateTest">
+  <component name="RunManager" selected="JUnit.VoteSessionTest">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Standard_JDK_11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -187,9 +185,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VoteSessionTest" />
         <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.ListCandidateTest" />
-        <item itemvalue="JUnit.VoteSessionTest" />
         <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
         <item itemvalue="JUnit.NominalCandidateTest.testSetPosition" />
       </list>
@@ -222,7 +220,7 @@
       <workItem from="1661356657254" duration="1287000" />
       <workItem from="1661873946667" duration="594000" />
       <workItem from="1661874796655" duration="2451000" />
-      <workItem from="1662471132722" duration="1653000" />
+      <workItem from="1662471132722" duration="2015000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>

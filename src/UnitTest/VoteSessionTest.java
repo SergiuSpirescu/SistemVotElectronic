@@ -35,18 +35,14 @@ public class VoteSessionTest {
         }
 
         @Test
-        @Ignore("Not implemented")
         public void testGetSessionID() {
+            assertEquals("123456", testVoteSessionInstance.getSessionID());
         }
 
         @Test
-        @Ignore("Not implemented")
         public void testBallotListItems() {
            ArrayList<Ballot> ballots = testVoteSessionInstance.getVoteBallots();
-
            assertNotNull(ballots);
-           System.out.println(ballots);
-
         }
 
         @After
