@@ -1,6 +1,8 @@
 package Model;
 
-public class NominalCandidate extends BaseCandidate {
+public class NominalCandidate extends BaseCandidate implements ICandidate {
+
+    private String candidateName;
 
     public String getCandidateName() {
         return candidateName;
@@ -10,10 +12,7 @@ public class NominalCandidate extends BaseCandidate {
         this.candidateName = candidateName;
     }
 
-    private String candidateName;
-
-    public NominalCandidate(String candidateName, int position, String partyName){
-        super(position, partyName);
-        this.candidateName = candidateName;
+    public NominalCandidate(){
+        super();
     }
 }
