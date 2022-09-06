@@ -19,6 +19,7 @@ public class VoteSession {
 
         this.sessionName = "";
         this.sessionID = "";
+        this.numberOfBallots = 0;
         this.voteBallots = new ArrayList<>();
     }
 

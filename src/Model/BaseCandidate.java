@@ -1,24 +1,27 @@
 package Model;
 
-import java.util.ArrayList;
+public abstract class BaseCandidate {
 
-public class BaseCandidate {
-
-    private int position;
-    private int listSize;
+    private int positionCount;
     private String partyName;
 
-    public BaseCandidate(int position, String partyName) {
-        this.position = position;
+    public BaseCandidate() {
+    }
+
+    public int getPositionCount() {
+        return this.positionCount;
+    }
+
+    public void setPositionCount(int pos) {
+        this.positionCount = pos;
+    }
+
+    public String getPartyName() {
+        return partyName;
+    }
+
+    public void setPartyName(String partyName) {
         this.partyName = partyName;
-    }
-
-    public int getPosition() {
-        return this.position;
-    }
-
-    public void setPosition(int pos) {
-        this.position = pos;
     }
 }
 

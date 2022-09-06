@@ -23,15 +23,15 @@ public class NominalCandidateTest {
     @Test
     public void testGetPosition() {
         NominalCandidate candidate = new NominalCandidate("Full Candidate Name", 5, "Java Party");
-        assertEquals(5, candidate.getPosition());
+        assertEquals(5, candidate.getPositionCount());
 
     }
 
     @Test
     public void testSetPosition() {
         NominalCandidate candidate = new NominalCandidate("Full Candidate Name", 0, "Java Party");
-        candidate.setPosition(8);
-        assertEquals(8,candidate.getPosition());
+        candidate.setPositionCount(8);
+        assertEquals(8,candidate.getPositionCount());
 
     }
 

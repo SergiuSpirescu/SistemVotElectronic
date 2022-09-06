@@ -34,7 +34,7 @@ public class ListCandidateTest {
 
     @Test
     public void testGetPosition() {
-        assertEquals(8,candidate.getPosition());
+        assertEquals(8,candidate.getPositionCount());
 
     }
     
