@@ -11,6 +11,9 @@ public class ListCandidate extends BaseCandidate implements ICandidate {
         super();
     }
 
+    public ListCandidate(int i, String java_party, ArrayList<String> testList) {
+    }
+
     public ArrayList<String> getNamesList() {
         return namesList;
     }

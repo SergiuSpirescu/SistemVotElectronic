@@ -1,7 +1,10 @@
 package Model.JSONHandler;
 
 
+import Model.Ballot;
+import Model.BaseCandidate;
 import Model.VoteSession;
+import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -33,7 +36,23 @@ public class JsonReader {
         }
 
         if (mainNode.has("ballotList")) {
-           JsonNode ballotNode = mainNode.at("ballotList");
+            JsonNode ballotNode = mainNode.get("ballotList");
+
+            Ballot ballotContainer = new Ballot();
+
+            ballotContainer.setBallotType(ballotNode.get("ballotType").asText());
+
+            //Nominal or List Ballot ?
+            if (ballotContainer.getBallotType().equals("Nominal")) {
+
+                //Nominal Ballot means parsing just one String as candidate name
+                //First create Node inside the candidate json
+
+                JsonNode candidateNode = ballotNode.get("candidateList");
+
+            }
+
+
         }
 
 

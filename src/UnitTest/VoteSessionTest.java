@@ -49,6 +49,7 @@ public class VoteSessionTest {
         public void testBallotListItems() {
            ArrayList<Ballot> ballots = testVoteSessionInstance.getVoteBallots();
            assertNotNull(ballots);
+            System.out.println(ballots);
         }
 
         @Test
