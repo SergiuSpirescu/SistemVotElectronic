@@ -28,7 +28,11 @@ public class JsonReader {
             session.setSessionName(mainNode.get("voteSessionName").asText("N/A"));
         }
 
+        if (mainNode.has("numberOfBallots")) {
+            session.setNumberOfBallots(mainNode.get("numberOfBallots").asInt(-1));
+        }
 
+        
 
     }
 
