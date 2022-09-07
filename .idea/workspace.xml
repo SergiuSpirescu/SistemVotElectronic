@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ListCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/NominalCandidate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +228,7 @@
       <workItem from="1661356657254" duration="1287000" />
       <workItem from="1661873946667" duration="594000" />
       <workItem from="1661874796655" duration="2451000" />
-      <workItem from="1662471132722" duration="11182000" />
+      <workItem from="1662471132722" duration="11494000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
@@ -261,5 +262,26 @@
     </ignored-roots>
     <MESSAGE value="Creat noua clasa CasutaCandidat" />
     <option name="LAST_COMMIT_MESSAGE" value="Creat noua clasa CasutaCandidat" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

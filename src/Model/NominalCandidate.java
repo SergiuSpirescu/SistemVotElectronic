@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.List;
+
 public class NominalCandidate extends BaseCandidate implements ICandidate {
 
     private String candidateName;
@@ -17,5 +19,10 @@ public class NominalCandidate extends BaseCandidate implements ICandidate {
 
     public NominalCandidate(){
         super();
+    }
+
+    @Override
+    public void addCandidate(List<String> candidateList) {
+        this.candidateName = candidateName.toString();
     }
 }
