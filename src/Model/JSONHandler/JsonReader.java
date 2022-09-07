@@ -1,13 +1,9 @@
 package Model.JSONHandler;
 
 
-import Model.Ballot;
-import Model.BaseCandidate;
-import Model.ListCandidate;
+
 import Model.VoteSession;
-import com.fasterxml.jackson.core.JsonToken;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -22,9 +18,12 @@ public class JsonReader {
     public static void initSession(String dataSource, VoteSession session) throws IOException {
 
 
+        File file = new File(dataSource);
+        VoteSession auxSession = VoteSession.getInstance();
+        auxSession = mapper.readValue(file, VoteSession.class);
 
 
-
+        session.setInitialized(true);
     }
 
 

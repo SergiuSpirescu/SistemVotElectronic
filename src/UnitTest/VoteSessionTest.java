@@ -14,6 +14,8 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 
 public class VoteSessionTest {
@@ -37,20 +39,23 @@ public class VoteSessionTest {
 
         @Test
         public void testGetSessionName() {
-            assertEquals("Test Session Name", testVoteSessionInstance.getSessionName());
-            System.out.println(testVoteSessionInstance.getSessionName());
+            assertEquals("Test Session Name", testVoteSessionInstance.getVoteSessionName());
+            System.out.println(testVoteSessionInstance.getVoteSessionName());
         }
 
         @Test
         public void testGetSessionID() {
-            assertEquals("123456", testVoteSessionInstance.getSessionID());
+            assertEquals("123456", testVoteSessionInstance.getVoteSessionID());
         }
 
         @Test
         public void testBallotListItems() {
-           ArrayList<Ballot> ballots = testVoteSessionInstance.getVoteBallots();
+           ArrayList<Ballot> ballots = testVoteSessionInstance.getBallotList();
            assertNotNull(ballots);
-            ballots.forEach(s -> System.out.println(s + " "));
+           testVoteSessionInstance.getBallotList()
+                   .stream()
+                   .collect(Collectors.toList())
+                   .forEach(s -> System.out.println(s.getCandidateList()));
         }
 
         @Test

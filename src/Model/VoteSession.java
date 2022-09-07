@@ -22,6 +22,14 @@ public class VoteSession {
         this.ballotList = new ArrayList<>();
     }
 
+    private VoteSession(boolean isInitialized, String voteSessionName, String voteSessionID, int numberOfBallots, ArrayList<Ballot> ballotList) {
+        this.isInitialized = false;
+        this.voteSessionName = voteSessionName;
+        this.voteSessionID = voteSessionID;
+        this.numberOfBallots = numberOfBallots;
+        this.ballotList = ballotList;
+    }
+
     public static VoteSession getInstance() {
         if (theInstance == null) {
             theInstance = new VoteSession();
@@ -67,6 +75,16 @@ public class VoteSession {
 
     public void setBallotList(ArrayList<Ballot> ballotList) {
         this.ballotList = ballotList;
+    }
+
+    @Override
+    public String toString() {
+        return "VoteSession{" +
+                ", voteSessionName='" + voteSessionName + '\'' +
+                ", voteSessionID='" + voteSessionID + '\'' +
+                ", numberOfBallots=" + numberOfBallots +
+                ", ballotList=" + ballotList +
+                '}';
     }
 
 }

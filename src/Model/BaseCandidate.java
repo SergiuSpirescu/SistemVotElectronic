@@ -2,11 +2,17 @@ package Model;
 
 import java.util.List;
 
-public abstract class BaseCandidate {
+public class BaseCandidate {
 
     private int positionCount;
     private String partyName;
     private List<String> nameList;
+
+    public BaseCandidate(int positionCount, String partyName, List<String> nameList) {
+        this.positionCount = positionCount;
+        this.partyName = partyName;
+        this.nameList = nameList;
+    }
 
     public BaseCandidate() {
     }
@@ -33,6 +39,15 @@ public abstract class BaseCandidate {
 
     public void setNameList(List<String> nameList) {
         this.nameList = nameList;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseCandidate{" +
+                "positionCount=" + positionCount +
+                ", partyName='" + partyName + '\'' +
+                ", nameList=" + nameList.toString() +
+                '}';
     }
 }
 
