@@ -1,13 +1,20 @@
 package Model;
 
 import java.util.HashMap;
-import java.util.Set;
+import java.util.List;
 
 public class Ballot {
 
-    protected String ballotType;
 
-    protected HashMap<Integer, BaseCandidate> candidateList;
+    private String ballotType;
+    private List<BaseCandidate> candidateList;
+
+    public Ballot() {
+    }
+
+    public Ballot(String ballotType) {
+        this.ballotType = ballotType;
+    }
 
     public String getBallotType() {
         return ballotType;
@@ -17,28 +24,11 @@ public class Ballot {
         this.ballotType = ballotType;
     }
 
-    public HashMap<Integer, BaseCandidate> getCandidates() {
+    public List<BaseCandidate> getCandidateList() {
         return candidateList;
     }
 
-    public void addCandidate(int pos, BaseCandidate candidate) {
-        this.candidateList.put(pos, candidate);
-    }
-
-    public void setCandidateList(HashMap<Integer, BaseCandidate> candidateList) {
+    public void setCandidateList(List<BaseCandidate> candidateList) {
         this.candidateList = candidateList;
-    }
-
-    @Override
-    public String toString() {
-
-        StringBuilder stringBuilder = new StringBuilder();
-
-        for (Integer ks : candidateList.keySet()) {
-            BaseCandidate bc = candidateList.get(ks);
-            stringBuilder.append(bc.getPartyName() + " ");
-        }
-
-        return stringBuilder.toString();
     }
 }

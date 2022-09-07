@@ -6,21 +6,20 @@ import java.util.ArrayList;
 
 //Singleton Class
 public class VoteSession {
-
     private static VoteSession theInstance = null; // Singleton instance
-    public boolean isInitialized = false;
-    private String sessionName; //name read from JSON
-    private String sessionID; //id read from JSON
-    private int numberOfBallots;
-    private ArrayList<Ballot> voteBallots;
 
+    public boolean isInitialized = false;
+    private String voteSessionName; //name read from JSON
+    private String voteSessionID; //id read from JSON
+    private int numberOfBallots;
+    private ArrayList<Ballot> ballotList;
 
     private VoteSession() {
 
-        this.sessionName = "";
-        this.sessionID = "";
+        this.voteSessionName = "";
+        this.voteSessionID = "";
         this.numberOfBallots = 0;
-        this.voteBallots = new ArrayList<>();
+        this.ballotList = new ArrayList<>();
     }
 
     public static VoteSession getInstance() {
@@ -30,59 +29,44 @@ public class VoteSession {
         return theInstance;
     }
 
-    public void initSession() {
-
-        String sesName;
-        String precID;
-
-        //Establish connection to data source
-
-
-        //Fetch Data
-
-
-        //Validate Data
-
-
-        //Assign Data
-//        setSessionName(sesName);
-//        setPrecintID(precID);
-
-        setSessionName("Test Session Name");
-        setSessionID("Test Precint ID");
-
-        this.isInitialized = true;
-
+    public boolean isInitialized() {
+        return isInitialized;
     }
 
-    public String getSessionName() {
-        return this.sessionName;
+    public void setInitialized(boolean initialized) {
+        isInitialized = initialized;
     }
 
-    public void setSessionName(String sessionName) {
-        this.sessionName = sessionName;
+    public String getVoteSessionName() {
+        return voteSessionName;
     }
 
-    public void addBallot(Ballot ballot) {
-        voteBallots.add(ballot);
+    public void setVoteSessionName(String voteSessionName) {
+        this.voteSessionName = voteSessionName;
     }
 
-    public ArrayList<Ballot> getVoteBallots() {
-        return this.voteBallots;
+    public String getVoteSessionID() {
+        return voteSessionID;
     }
 
-    public void setSessionID(String id) {
-        this.sessionID = id;
-    }
-    public String getSessionID() {
-        return this.sessionID;
-    }
-
-    public void setNumberOfBallots(int number) {
-        this.numberOfBallots = number;
+    public void setVoteSessionID(String voteSessionID) {
+        this.voteSessionID = voteSessionID;
     }
 
     public int getNumberOfBallots() {
-        return this.numberOfBallots;
+        return numberOfBallots;
     }
+
+    public void setNumberOfBallots(int numberOfBallots) {
+        this.numberOfBallots = numberOfBallots;
+    }
+
+    public ArrayList<Ballot> getBallotList() {
+        return ballotList;
+    }
+
+    public void setBallotList(ArrayList<Ballot> ballotList) {
+        this.ballotList = ballotList;
+    }
+
 }

@@ -21,66 +21,8 @@ public class JsonReader {
 
     public static void initSession(String dataSource, VoteSession session) throws IOException {
 
-        if (session == null) {return;}
-
-        File file = new File(dataSource);
-
-        JsonNode mainNode = mapper.readTree(file); // getting the root node of the Json file
-
-        if (mainNode.has("voteSessionID")) {
-            session.setSessionID(mainNode.get("voteSessionID").asText("N/A"));
-        }
-
-        if (mainNode.has("voteSessionName")) {
-            session.setSessionName(mainNode.get("voteSessionName").asText("N/A"));
-        }
-
-        if (mainNode.has("numberOfBallots")) {
-            session.setNumberOfBallots(mainNode.get("numberOfBallots").asInt(-1));
-        }
-
-        if (mainNode.has("ballotList")) {
-
-           JsonNode ballotNode = mainNode.path("ballotList"); // getting the node for the Json array for ballots
-
-            final int numberOfBallots = mainNode.get("numberOfBallots").asInt();
-
-            if (ballotNode.isArray()) {
-
-                for (JsonNode jn : ballotNode) {
-
-                    JsonNode candidateNode = jn.path("candidateList"); // for each element, get the node for each of the candidates
-
-                    if (candidateNode.isArray()) { // if it is a List type of vote,
-                                                                                                               // each position will have a list of names
-                        for (JsonNode cn : candidateNode) {
-                            ListCandidate lc = new ListCandidate() {};
-
-                            lc.setPositionCount(cn.get("positionCount").asInt());
-                            lc.setPartyName(cn.get("partyName").asText());
-                            JsonNode namesList = cn.path("namesList");
-
-                            if (namesList.isArray()) {
-
-                                ArrayList<String> ar = new ArrayList<>();
-
-                                for (JsonNode namesNode : namesList) {
-
-                                    ar.add(namesList.asText());
-                                }
-
-//                            session.getVoteBallots().add();
-                        }
-                        }
-                    } else {
-
-                    }
-                }
-            }
 
 
-
-        }
 
 
     }

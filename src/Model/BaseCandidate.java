@@ -1,19 +1,22 @@
 package Model;
 
+import java.util.List;
+
 public abstract class BaseCandidate {
 
     private int positionCount;
     private String partyName;
+    private List<String> nameList;
 
     public BaseCandidate() {
     }
 
     public int getPositionCount() {
-        return this.positionCount;
+        return positionCount;
     }
 
-    public void setPositionCount(int pos) {
-        this.positionCount = pos;
+    public void setPositionCount(int positionCount) {
+        this.positionCount = positionCount;
     }
 
     public String getPartyName() {
@@ -22,6 +25,14 @@ public abstract class BaseCandidate {
 
     public void setPartyName(String partyName) {
         this.partyName = partyName;
+    }
+
+    public List<String> getNameList() {
+        return nameList;
+    }
+
+    public void setNameList(List<String> nameList) {
+        this.nameList = nameList;
     }
 }
 

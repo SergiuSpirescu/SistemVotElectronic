@@ -9,14 +9,14 @@
         {
           "positionCount": 1,
           "partyName": "Party1",
-          "namesList": [
+          "nameList": [
             "Name1", "Name2"
           ]
         },
         {
           "positionCount": 2,
           "partyName": "Party2",
-          "namesList": [
+          "nameList": [
             "Name3", "Name4"
           ]
         }
