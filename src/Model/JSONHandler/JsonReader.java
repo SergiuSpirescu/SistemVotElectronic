@@ -25,7 +25,7 @@ public class JsonReader {
 
         File file = new File(dataSource);
 
-        JsonNode mainNode = mapper.readTree(file);
+        JsonNode mainNode = mapper.readTree(file); // getting the root node of the Json file
 
         if (mainNode.has("voteSessionID")) {
             session.setSessionID(mainNode.get("voteSessionID").asText("N/A"));
@@ -41,27 +41,33 @@ public class JsonReader {
 
         if (mainNode.has("ballotList")) {
 
-           JsonNode ballotNode = mainNode.path("ballotList");
+           JsonNode ballotNode = mainNode.path("ballotList"); // getting the node for the Json array for ballots
+
             final int numberOfBallots = mainNode.get("numberOfBallots").asInt();
 
             if (ballotNode.isArray()) {
 
                 for (JsonNode jn : ballotNode) {
-                    JsonNode candidateNode = ballotNode.path("candidateList");
 
-                    if ((ballotNode.get("ballotType").asText().equals("List")) && (candidateNode.isArray())) {
+                    JsonNode candidateNode = ballotNode.path("candidateList"); // for each element, get the node for each of the candidates
 
+                    if ((ballotNode.get("ballotType").asText().equals("List")) && (candidateNode.isArray())) { // if it is a List type of vote,
+                                                                                                               // each position will have a list of names
                         for (JsonNode cn : candidateNode) {
-                            ListCandidate bc = new ListCandidate() {};
+                            ListCandidate lc = new ListCandidate() {};
 
-                            bc.setPositionCount(candidateNode.get("positionCount").asInt());
-                            bc.setPartyName(candidateNode.get("partyName").asText());
-                            JsonNode candidateArray = candidateNode.path("candidateList");
+                            lc.setPositionCount(candidateNode.get("positionCount").asInt());
+                            lc.setPartyName(candidateNode.get("partyName").asText());
+                            JsonNode namesList = candidateNode.path("candidateList");
 
-                            if (candidateArray.isArray()) {
+                            if (namesList.isArray()) {
 
                                 ArrayList<String> ar = new ArrayList<>();
-                                ar = mainNode.path("ballotList").path("candidateList").asText();
+
+                                for (JsonNode namesNode : namesList) {
+
+                                    ar.add(namesNode.asText());
+                                }
 
 //                            session.getVoteBallots().add();
                         }
