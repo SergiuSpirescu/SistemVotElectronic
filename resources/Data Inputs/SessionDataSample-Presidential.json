@@ -9,22 +9,22 @@
         {
           "positionCount": 1,
           "partyName": "USR",
-          "nameList": "BARNA ILIE-DAN"
+          "nameList": ["BARNA ILIE-DAN"]
         },
         {
           "positionCount": 2,
           "partyName": "PMP",
-          "nameList": "PALEOLOGU THEODOR"
+          "nameList": ["PALEOLOGU THEODOR"]
         },
         {
           "positionCount": 3,
           "partyName": "PNL",
-          "nameList": "IOHANNIS KLAUS-WERNER"
+          "nameList": ["IOHANNIS KLAUS-WERNER"]
         },
         {
           "positionCount": 4,
           "partyName": "INDEPENDENT",
-          "nameList": "MARIAN-STANOEVICI BOGDAN-DRAGOȘ-AURELIU"
+          "nameList": ["MARIAN-STANOEVICI BOGDAN-DRAGOȘ-AURELIU"]
         }
       ]
     }

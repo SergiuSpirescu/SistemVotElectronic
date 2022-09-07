@@ -4,6 +4,7 @@ package Model.JSONHandler;
 
 import Model.VoteSession;
 
+import Model.VoteSessionContainer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -19,9 +20,8 @@ public class JsonReader {
 
 
         File file = new File(dataSource);
-        VoteSession auxSession = VoteSession.getInstance();
-        auxSession = mapper.readValue(file, VoteSession.class);
-
+        VoteSessionContainer container = mapper.readValue(file, VoteSessionContainer.class);
+        session.storeData(container);
 
         session.setInitialized(true);
     }

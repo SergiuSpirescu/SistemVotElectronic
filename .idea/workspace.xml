@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Model/VoteSessionContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Ballot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/BaseCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BaseCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Data Inputs/SessionDataSample-Presidential.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Data Inputs/SessionDataSample-Presidential.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/VoteSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +20,9 @@
         <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="package.json" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,18 +64,21 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="UnitTest" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="Model.BaseCandidate" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -232,7 +234,7 @@
       <workItem from="1661356657254" duration="1287000" />
       <workItem from="1661873946667" duration="594000" />
       <workItem from="1661874796655" duration="2451000" />
-      <workItem from="1662471132722" duration="15311000" />
+      <workItem from="1662471132722" duration="16615000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
@@ -266,31 +268,5 @@
     </ignored-roots>
     <MESSAGE value="Creat noua clasa CasutaCandidat" />
     <option name="LAST_COMMIT_MESSAGE" value="Creat noua clasa CasutaCandidat" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
