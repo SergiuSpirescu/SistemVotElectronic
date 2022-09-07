@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ListCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/NominalCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Ballot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,10 +196,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.VoteSessionTest.testBallotListItems" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetNumberOfBallots" />
         <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetSessionID" />
         <item itemvalue="JUnit.VoteSessionTest" />
+        <item itemvalue="JUnit.VoteSessionTest.testGetNumberOfBallots" />
+        <item itemvalue="JUnit.VoteSessionTest.testGetSessionID" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +230,7 @@
       <workItem from="1661356657254" duration="1287000" />
       <workItem from="1661873946667" duration="594000" />
       <workItem from="1661874796655" duration="2451000" />
-      <workItem from="1662471132722" duration="11494000" />
+      <workItem from="1662471132722" duration="13377000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
@@ -268,18 +270,38 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="4" />
+          <line>41</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
           <line>51</line>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java</url>
           <line>53</line>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

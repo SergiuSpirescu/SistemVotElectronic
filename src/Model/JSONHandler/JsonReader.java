@@ -49,16 +49,16 @@ public class JsonReader {
 
                 for (JsonNode jn : ballotNode) {
 
-                    JsonNode candidateNode = ballotNode.path("candidateList"); // for each element, get the node for each of the candidates
+                    JsonNode candidateNode = jn.path("candidateList"); // for each element, get the node for each of the candidates
 
-                    if ((ballotNode.get("ballotType").asText().equals("List")) && (candidateNode.isArray())) { // if it is a List type of vote,
+                    if (candidateNode.isArray()) { // if it is a List type of vote,
                                                                                                                // each position will have a list of names
                         for (JsonNode cn : candidateNode) {
                             ListCandidate lc = new ListCandidate() {};
 
-                            lc.setPositionCount(candidateNode.get("positionCount").asInt());
-                            lc.setPartyName(candidateNode.get("partyName").asText());
-                            JsonNode namesList = candidateNode.path("candidateList");
+                            lc.setPositionCount(cn.get("positionCount").asInt());
+                            lc.setPartyName(cn.get("partyName").asText());
+                            JsonNode namesList = cn.path("namesList");
 
                             if (namesList.isArray()) {
 
@@ -66,7 +66,7 @@ public class JsonReader {
 
                                 for (JsonNode namesNode : namesList) {
 
-                                    ar.add(namesNode.asText());
+                                    ar.add(namesList.asText());
                                 }
 
 //                            session.getVoteBallots().add();

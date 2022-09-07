@@ -38,6 +38,7 @@ public class VoteSessionTest {
         @Test
         public void testGetSessionName() {
             assertEquals("Test Session Name", testVoteSessionInstance.getSessionName());
+            System.out.println(testVoteSessionInstance.getSessionName());
         }
 
         @Test
@@ -49,7 +50,7 @@ public class VoteSessionTest {
         public void testBallotListItems() {
            ArrayList<Ballot> ballots = testVoteSessionInstance.getVoteBallots();
            assertNotNull(ballots);
-            System.out.println(ballots);
+            ballots.forEach(s -> System.out.println(s + " "));
         }
 
         @Test
