@@ -1,37 +1,67 @@
+package UnitTest;
+
+import Model.Ballot;
+import Model.JSONHandler.JsonReader;
 import Model.VoteSession;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+
 public class VoteSessionTest {
 
 
-    @Before
-    public void setUp() throws Exception {
+     VoteSession testVoteSessionInstance = VoteSession.getInstance();
 
-        VoteSession testVoteSessionInstance = VoteSession.getInstance(false);
+        @Before
+        public void setup() {
+            String sourceFile = "resources/Data Inputs/simpleDataFile.json";
 
-//        testVoteSessionInstance.setSessionName("Test Session Name");
-//        testVoteSessionInstance.setPrecintID("Test ID");
-        
+            if (testVoteSessionInstance.isInitialized != true)
+            {
+                try {
+                    JsonReader.initSession(sourceFile, testVoteSessionInstance);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        @Test
+        public void testGetSessionName() {
+            assertEquals("Test Session Name", testVoteSessionInstance.getVoteSessionName());
+            System.out.println(testVoteSessionInstance.getVoteSessionName());
+        }
+
+        @Test
+        public void testGetSessionID() {
+            assertEquals("123456", testVoteSessionInstance.getVoteSessionID());
+        }
+
+        @Test
+        public void testBallotListItems() {
+           ArrayList<Ballot> ballots = testVoteSessionInstance.getBallotList();
+           assertNotNull(ballots);
+           testVoteSessionInstance.getBallotList()
+                   .stream()
+                   .collect(Collectors.toList())
+                   .forEach(s -> System.out.println(s.getCandidateList()));
+        }
+
+        @Test
+        public void testGetNumberOfBallots() {
+            assertEquals(1, testVoteSessionInstance.getNumberOfBallots());
+        }
+
+        @After
+        public void cleanup() {
+            testVoteSessionInstance = null;
+        }
     }
-
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    @Test
-    public void getInstance() {
-
-    }
-
-    @Test
-    public void getSessionName() {
-
-    }
-
-    @Test
-    public void getPrecintID() {
-    }
-
-}

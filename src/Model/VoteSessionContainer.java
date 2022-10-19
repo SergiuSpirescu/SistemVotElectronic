@@ -1,12 +1,9 @@
 package Model;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.ArrayList;
 
-//Singleton Class
-public class VoteSession {
-    private static VoteSession theInstance = null; // Singleton instance
+public class VoteSessionContainer {
+
 
     public boolean isInitialized = false;
     private String voteSessionName; //name read from JSON
@@ -14,7 +11,7 @@ public class VoteSession {
     private int numberOfBallots;
     private ArrayList<Ballot> ballotList;
 
-    private VoteSession() {
+    public VoteSessionContainer() {
 
         this.voteSessionName = "";
         this.voteSessionID = "";
@@ -22,19 +19,12 @@ public class VoteSession {
         this.ballotList = new ArrayList<>();
     }
 
-    private VoteSession(boolean isInitialized, String voteSessionName, String voteSessionID, int numberOfBallots, ArrayList<Ballot> ballotList) {
+    public VoteSessionContainer(boolean isInitialized, String voteSessionName, String voteSessionID, int numberOfBallots, ArrayList<Ballot> ballotList) {
         this.isInitialized = false;
         this.voteSessionName = voteSessionName;
         this.voteSessionID = voteSessionID;
         this.numberOfBallots = numberOfBallots;
         this.ballotList = ballotList;
-    }
-
-    public static VoteSession getInstance() {
-        if (theInstance == null) {
-            theInstance = new VoteSession();
-        }
-        return theInstance;
     }
 
     public boolean isInitialized() {
@@ -76,24 +66,4 @@ public class VoteSession {
     public void setBallotList(ArrayList<Ballot> ballotList) {
         this.ballotList = ballotList;
     }
-
-    @Override
-    public String toString() {
-        return "VoteSession{" +
-                ", voteSessionName='" + voteSessionName + '\'' +
-                ", voteSessionID='" + voteSessionID + '\'' +
-                ", numberOfBallots=" + numberOfBallots +
-                ", ballotList=" + ballotList +
-                '}';
-    }
-
-    public void storeData(VoteSessionContainer container) {
-
-        this.setVoteSessionID(container.getVoteSessionID());
-        this.setVoteSessionName(container.getVoteSessionName());
-        this.setNumberOfBallots(container.getNumberOfBallots());
-        this.setBallotList(container.getBallotList());
-        this.setInitialized(true);
-    }
-
 }

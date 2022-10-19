@@ -1,20 +1,53 @@
 package Model;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class BaseCandidate {
 
-    private int position;
-    private int listSize;
+    private int positionCount;
     private String partyName;
+    private List<String> nameList;
 
-    public BaseCandidate(int position, String partyName) {
-        this.position = position;
+    public BaseCandidate(int positionCount, String partyName, List<String> nameList) {
+        this.positionCount = positionCount;
+        this.partyName = partyName;
+        this.nameList = nameList;
+    }
+
+    public BaseCandidate() {
+    }
+
+    public int getPositionCount() {
+        return positionCount;
+    }
+
+    public void setPositionCount(int positionCount) {
+        this.positionCount = positionCount;
+    }
+
+    public String getPartyName() {
+        return partyName;
+    }
+
+    public void setPartyName(String partyName) {
         this.partyName = partyName;
     }
 
-    public int getPosition() {
-        return this.position;
+    public List<String> getNameList() {
+        return nameList;
+    }
+
+    public void setNameList(List<String> nameList) {
+        this.nameList = nameList;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseCandidate{" +
+                "positionCount=" + positionCount +
+                ", partyName='" + partyName + '\'' +
+                ", nameList=" + nameList.toString() +
+                '}';
     }
 }
 

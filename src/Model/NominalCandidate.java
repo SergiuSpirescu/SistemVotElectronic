@@ -1,8 +1,13 @@
 package Model;
 
-public class NominalCandidate extends BaseCandidate {
+import java.util.List;
 
-    private final int listSize = 1;
+public class NominalCandidate extends BaseCandidate implements ICandidate {
+
+    private String candidateName;
+
+    public NominalCandidate(String full_candidate_name, int i, String java_party) {
+    }
 
     public String getCandidateName() {
         return candidateName;
@@ -12,10 +17,12 @@ public class NominalCandidate extends BaseCandidate {
         this.candidateName = candidateName;
     }
 
-    private String candidateName;
+    public NominalCandidate(){
+        super();
+    }
 
-    public NominalCandidate(String candidateName, int position, String partyName){
-        super(position, partyName);
-        this.candidateName = candidateName;
+    @Override
+    public void addCandidate(List<String> candidateList) {
+        this.candidateName = candidateName.toString();
     }
 }

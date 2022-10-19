@@ -1,0 +1,86 @@
+{
+  "voteSessionID": "123456",
+  "voteSessionName": "Test Session Name",
+  "numberOfBallots": 4,
+  "ballotList": [
+    {
+      "ballotType": "List",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "Party1",
+          "nameList": [
+            "Name1", "Name2"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "Party2",
+          "nameList": [
+            "Name3", "Name4"
+          ]
+        }
+      ]
+    }
+  , 
+    {
+      "ballotType": "Nominal",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "Party1",
+          "nameList": [
+            "Name5", "Name6"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "Party2",
+          "nameList": [
+            "Name7", "Name8"
+          ]
+        }
+      ]
+    }
+  ,
+    {
+      "ballotType": "Nominal",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "Party1",
+          "nameList": [
+            "Name9", "Name10"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "Party2",
+          "nameList": [
+            "Name11", "Name12"
+          ]
+        }
+      ]
+    }
+  ,
+    {
+      "ballotType": "List",
+      "candidateList": [
+        {
+          "positionCount": 1,
+          "partyName": "Party1",
+          "nameList": [
+            "Name13", "Name14"
+          ]
+        },
+        {
+          "positionCount": 2,
+          "partyName": "Party2",
+          "nameList": [
+            "Name15", "Name16"
+          ]
+        }
+      ]
+    }
+  ]
+}

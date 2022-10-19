@@ -1,16 +1,46 @@
 package Model;
 
-import java.util.HashMap;
+import java.util.List;
 
 public class Ballot {
 
-    protected HashMap<Integer, BaseCandidate> candidates;
 
-    protected HashMap<Integer, BaseCandidate> getCandidates() {
-        return candidates;
+    private String ballotType;
+    private List<BaseCandidate> candidateList;
+
+    public Ballot(String ballotType, List<BaseCandidate> candidateList) {
+        this.ballotType = ballotType;
+        this.candidateList = candidateList;
     }
 
-    protected void addCandidate(int pos, BaseCandidate candidate) {
-        this.candidates.put(pos, candidate);
+    public Ballot() {
+    }
+
+    public Ballot(String ballotType) {
+        this.ballotType = ballotType;
+    }
+
+    public String getBallotType() {
+        return ballotType;
+    }
+
+    public void setBallotType(String ballotType) {
+        this.ballotType = ballotType;
+    }
+
+    public List<BaseCandidate> getCandidateList() {
+        return candidateList;
+    }
+
+    public void setCandidateList(List<BaseCandidate> candidateList) {
+        this.candidateList = candidateList;
+    }
+
+    @Override
+    public String toString() {
+        return "Ballot{" +
+                "ballotType='" + ballotType + '\'' +
+                ", candidateList=" + candidateList +
+                '}';
     }
 }
