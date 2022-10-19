@@ -1,15 +1,12 @@
 package Model.JSONHandler;
 
 
-
 import Model.VoteSession;
-
 import Model.VoteSessionContainer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 
 public class JsonReader {
@@ -23,6 +20,8 @@ public class JsonReader {
         VoteSessionContainer container = mapper.readValue(file, VoteSessionContainer.class);
         session.storeData(container);
 
+
+        //TO-DO data integrity checks ?
         session.setInitialized(true);
     }
 

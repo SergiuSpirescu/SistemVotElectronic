@@ -21,8 +21,9 @@
           ]
         }
       ]
-    },
-	{
+    }
+  , 
+    {
       "ballotType": "Nominal",
       "candidateList": [
         {
@@ -40,7 +41,8 @@
           ]
         }
       ]
-    },
+    }
+  ,
     {
       "ballotType": "Nominal",
       "candidateList": [
@@ -59,7 +61,8 @@
           ]
         }
       ]
-    },
+    }
+  ,
     {
       "ballotType": "List",
       "candidateList": [

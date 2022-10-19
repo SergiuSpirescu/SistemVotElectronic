@@ -2,20 +2,17 @@ package UnitTest;
 
 import Model.Ballot;
 import Model.JSONHandler.JsonReader;
-
 import Model.VoteSession;
-import static org.junit.Assert.*;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.stream.Collectors;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 
 public class VoteSessionTest {
