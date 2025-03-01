@@ -10,17 +10,18 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class VoteExitController {
     public void onExitButton(ActionEvent actionEvent) {
-        System.out.println("Aplicatie oprita din buton . . . " + "Final Window");
+        System.out.println("Aplicatie oprita din butonul X din: Final Window");
         System.exit(0);
     }
 
     public void switchToMainView(ActionEvent event) throws IOException {
 
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-        Parent sessionRoot = FXMLLoader.load(getClass().getResource("../../../../../resources/MainWindowView.fxml"));
+        Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/MainWindowView.fxml")));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Vot Electronic");

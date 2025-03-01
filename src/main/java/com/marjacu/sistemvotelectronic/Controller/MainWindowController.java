@@ -14,6 +14,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
@@ -54,7 +55,7 @@ public class MainWindowController implements Initializable {
 //        onStartButtonClicked();
 
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-        Parent sessionRoot = FXMLLoader.load(getClass().getResource("../../../../../resources/VoteSessionView.fxml"));
+        Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/VoteSessionView.fxml")));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Vot Electronic");
