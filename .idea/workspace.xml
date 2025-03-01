@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Ignoring tests for now">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Ignoring tests for now" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +130,7 @@
       <command value="mvn compiler:compile" />
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.sistem-vot-electronic-1.0.0.jar">
+  <component name="RunManager" selected="Maven.Maven Run SVE">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.marjacu.Start" />
       <module name="user-identity-rest" />
