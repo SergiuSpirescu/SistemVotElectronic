@@ -30,5 +30,6 @@ hs_err_pid*
 .idea/**/shelf
 .idea/workspace.xml
 out/
-*.xml
-*.xml
+*workspace.xml
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst

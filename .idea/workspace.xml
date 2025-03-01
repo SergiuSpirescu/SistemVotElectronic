@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-identity-rest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SistemVotElectronic_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/META-INF/SistemVotElectronic.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/MainWindowView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/requirements/Requirement List.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/MainWindowView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteBallotView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteExitView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteSessionView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/WEB-INF/appengine-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteExitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/Ballot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/BaseCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/BaseCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ICandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/ICandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/ListCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/NominalCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/SessionFetchAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/SessionFetchAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/VoteSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/VoteSessionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/VoteSessionContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/ListCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Refactored entire project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +31,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SergiuSpirescu/SistemVotElectronic.git",
+    "accountId": "ed3c7c09-6eed-4fea-a1bb-1bf654dc1635"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -263,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1637420299137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored entire project">
+      <option name="closed" value="true" />
+      <created>1740841195339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740841195339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +254,7 @@
       <path value="$PROJECT_DIR$/SistemVotElectronic" />
     </ignored-roots>
     <MESSAGE value="Creat noua clasa CasutaCandidat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creat noua clasa CasutaCandidat" />
+    <MESSAGE value="Refactored entire project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored entire project" />
   </component>
 </project>
