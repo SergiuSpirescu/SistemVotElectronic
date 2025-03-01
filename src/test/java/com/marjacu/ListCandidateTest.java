@@ -4,7 +4,9 @@ import com.marjacu.sistemvotelectronic.Model.ListCandidate;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
 import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 @Ignore("Not implemented")

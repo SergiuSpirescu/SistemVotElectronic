@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Ignoring tests for now" />
+    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Update .gitignore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainWindowView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sistem-vot-electronic-1.0.0.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +53,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SergiuSpirescu&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/SergiuSpirescu/SistemVotElectronic.git&quot;,
@@ -40,15 +68,17 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="jdkForImporter" value="#JAVA_HOME" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -68,7 +98,9 @@
     "Application.Start.executor": "Debug",
     "Application.Start_SVE.executor": "Run",
     "Application.com.marjacu.Start.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar.executor": "Run",
     "JAR Application.sistem-vot-electronic-1.0.0.jar.executor": "Run",
     "Maven. [clean].executor": "Run",
     "Maven. [compile].executor": "Run",
@@ -83,7 +115,7 @@
     "Maven.sistem-vot-electronic [validate].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -92,8 +124,8 @@
     "last_opened_file_path": "C:/Users/SS-PC/Ciorne/SistemVotElectronic/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "project.structure.side.proportion": "0.16979656",
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -130,9 +162,9 @@
       <command value="mvn compiler:compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Maven Run SVE">
+  <component name="RunManager" selected="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.marjacu.Start" />
+      <option name="MAIN_CLASS_NAME" value="com.marjacu.sistemvotelectronic.Start" />
       <module name="user-identity-rest" />
       <extension name="coverage">
         <pattern>
@@ -143,6 +175,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sistem-vot-electronic-0.2.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
+      <method v="2" />
     </configuration>
     <configuration name="sistem-vot-electronic-1.0.0.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/sistem-vot-electronic-1.0.0.jar" />
@@ -180,11 +220,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Start" />
+      <item itemvalue="JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
+      <item itemvalue="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
       <item itemvalue="JAR Application.sistem-vot-electronic-1.0.0.jar" />
       <item itemvalue="Maven.Maven Run SVE" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
         <item itemvalue="JAR Application.sistem-vot-electronic-1.0.0.jar" />
         <item itemvalue="Application.Start" />
       </list>
@@ -250,7 +294,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740843597389</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed controllers">
+      <option name="closed" value="true" />
+      <created>1740844541881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740844541881</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update .gitignore">
+      <option name="closed" value="true" />
+      <created>1740844616276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740844616276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +334,8 @@
     <MESSAGE value="Creat noua clasa CasutaCandidat" />
     <MESSAGE value="Refactored entire project" />
     <MESSAGE value="Ignoring tests for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignoring tests for now" />
+    <MESSAGE value="Fixed controllers" />
+    <MESSAGE value="Update .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore" />
   </component>
 </project>

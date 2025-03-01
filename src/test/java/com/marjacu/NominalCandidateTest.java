@@ -4,7 +4,7 @@ import com.marjacu.sistemvotelectronic.Model.NominalCandidate;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @Ignore("Not implemented")
 public class NominalCandidateTest {

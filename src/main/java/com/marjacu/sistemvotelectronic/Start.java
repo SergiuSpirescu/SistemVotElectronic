@@ -1,4 +1,4 @@
-package com.marjacu;
+package com.marjacu.sistemvotelectronic;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
