@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user-identity-rest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SistemVotElectronic_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Data Inputs/simpleDataFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Data Inputs/simpleDataFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Ballot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ListCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemVotElectronic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/META-INF/SistemVotElectronic.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/SistemVotElectronic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/MainWindowView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteBallotView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteExitView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/View/VoteSessionView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/requirements/Requirement List.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/MainWindowView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteBallotView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteExitView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/src/View/VoteSessionView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/WEB-INF/appengine-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SistemVotElectronic/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Ballot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/Ballot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BaseCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/BaseCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ICandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/ICandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ListCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/ListCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/NominalCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/NominalCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/SessionFetchAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/SessionFetchAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/VoteSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/VoteSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/VoteSessionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/VoteSessionContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/ListCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTest/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,178 +76,150 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="21BevvRRdFrpREtH3WsEljt7WPA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="Model.BaseCandidate" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/UnitTest" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/Data Inputs" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Start.executor": "Debug",
+    "Application.Start_SVE.executor": "Run",
+    "Application.com.marjacu.Start.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Maven. [clean].executor": "Run",
+    "Maven. [compile].executor": "Run",
+    "Maven.Maven Build.executor": "Run",
+    "Maven.Maven Run SVE.executor": "Run",
+    "Maven.sistem-vot-electronic [clean].executor": "Run",
+    "Maven.sistem-vot-electronic [compile].executor": "Run",
+    "Maven.sistem-vot-electronic [compiler:compile].executor": "Run",
+    "Maven.sistem-vot-electronic [deploy].executor": "Run",
+    "Maven.sistem-vot-electronic [install].executor": "Run",
+    "Maven.sistem-vot-electronic [package].executor": "Run",
+    "Maven.sistem-vot-electronic [validate].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/SS-PC/Ciorne/SistemVotElectronic/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="UnitTest" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="Model.BaseCandidate" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\main\resources" />
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\test\java\com" />
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\test" />
+      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic" />
       <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\src\View" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SS-PC\Ciorne\SistemVotElectronic\resources\Data Inputs" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.marjacu" />
+      <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Model" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="UnitTest" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
       <command value="mvn validate" />
+      <command value="mvn clean" />
       <command value="mvn compile" />
+      <command value="mvn compiler:compile" />
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.VoteSessionTest.testBallotListItems">
-    <configuration name="NominalCandidateTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
+  <component name="RunManager" selected="Maven.Maven Run SVE">
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.marjacu.Start" />
+      <module name="user-identity-rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NominalCandidateTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VoteSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Maven Run SVE" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="VoteSessionTest.testBallotListItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
-      <option name="METHOD_NAME" value="testBallotListItems" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteSessionTest.testGetNumberOfBallots" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
-      <option name="METHOD_NAME" value="testGetNumberOfBallots" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteSessionTest.testGetSessionID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
-      <option name="METHOD_NAME" value="testGetSessionID" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteSessionTest.testGetSessionName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SistemVotElectronic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="UnitTest.VoteSessionTest" />
-      <option name="METHOD_NAME" value="testGetSessionName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Start" />
+      <item itemvalue="Maven.Maven Run SVE" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VoteSessionTest.testBallotListItems" />
-        <item itemvalue="JUnit.VoteSessionTest" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetSessionName" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetNumberOfBallots" />
-        <item itemvalue="JUnit.VoteSessionTest.testGetSessionID" />
+        <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -239,6 +250,11 @@
       <workItem from="1662471132722" duration="16756000" />
       <workItem from="1663258277626" duration="82000" />
       <workItem from="1666204097061" duration="713000" />
+      <workItem from="1723732703028" duration="63000" />
+      <workItem from="1732220320720" duration="22000" />
+      <workItem from="1732221778770" duration="33000" />
+      <workItem from="1732221833639" duration="259000" />
+      <workItem from="1740826502557" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Creat noua clasa CasutaCandidat">
       <created>1637420299137</created>
@@ -258,9 +274,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
