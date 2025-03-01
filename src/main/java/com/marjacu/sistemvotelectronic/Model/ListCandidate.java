@@ -27,7 +27,4 @@ public class ListCandidate extends BaseCandidate implements ICandidate {
         namesList.addAll(candidateList);
     }
 
-    public int getPositionCount() {
-        return 0;
-    }
 }

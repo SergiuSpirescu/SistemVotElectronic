@@ -18,7 +18,7 @@ public class BaseCandidate {
     }
 
     public int getPositionCount() {
-        return positionCount;
+        return this.positionCount;
     }
 
     public void setPositionCount(int positionCount) {

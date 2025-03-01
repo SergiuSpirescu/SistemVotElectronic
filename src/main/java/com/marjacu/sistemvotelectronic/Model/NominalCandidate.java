@@ -10,7 +10,7 @@ public class NominalCandidate extends BaseCandidate implements ICandidate {
     }
 
     public String getCandidateName() {
-        return candidateName;
+        return this.candidateName;
     }
 
     public void setCandidateName(String candidateName) {
