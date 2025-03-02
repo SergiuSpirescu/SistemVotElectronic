@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.util.Objects;
 
@@ -23,8 +24,10 @@ public class Start extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/MainWindowView.fxml")));
 
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
+
         primaryStage.setTitle("Vot Electronic");
         primaryStage.setScene(new Scene(root,screenSize.getWidth(),screenSize.getHeight()));
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setMaximized(true);
         primaryStage.show();
     }
