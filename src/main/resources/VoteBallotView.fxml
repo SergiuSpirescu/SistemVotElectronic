@@ -19,11 +19,10 @@
     </top>
 
     <center>
-        <VBox BorderPane.alignment="CENTER">
-        <GridPane>
-            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Buletin Vot"/>
-            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to FinalView" onAction="#switchToFinalView"/>
-        </GridPane>
+        <VBox BorderPane.alignment="CENTER"
+        alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+            <Label text="Placeholder Buletin Vot"/>
+            <Button text="Switch to FinalView" onAction="#switchToFinalView"/>
         </VBox>
     </center>
 

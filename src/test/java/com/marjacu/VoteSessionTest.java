@@ -1,35 +1,36 @@
 package com.marjacu;
 
 import com.marjacu.sistemvotelectronic.Model.Ballot;
+import com.marjacu.sistemvotelectronic.Model.JSONHandler.JsonReader;
 import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
-@Ignore("Not implemented")
+//@Ignore("Not implemented")
 public class VoteSessionTest {
 
      VoteSession testVoteSessionInstance = VoteSession.getInstance();
 
-        @Ignore ("Test Not Implemented")
+//        @Ignore ("Test Not Implemented")
         @Before
         public void setup() {
-            String sourceFile = "resources/Data Inputs/simpleDataFile.json";
+            String sourceFile = "resources\\Data Inputs\\simpleDataFile.json";
 
             if (!testVoteSessionInstance.isInitialized)
             {
-//                try {
-//
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    JsonReader.initSession(sourceFile, testVoteSessionInstance);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
 
@@ -44,11 +45,11 @@ public class VoteSessionTest {
             assertEquals("123456", testVoteSessionInstance.getVoteSessionID());
         }
 
-        @Ignore("Test Not Implemented")
+//        @Ignore("Test Not Implemented")
         @Test
         public void testBallotListItems() {
            ArrayList<Ballot> ballots = testVoteSessionInstance.getBallotList();
-           assertNotNull(ballots);
+           assertNotEquals(0, ballots.size());
            testVoteSessionInstance.getBallotList()
                    .stream()
                    .collect(Collectors.toList())

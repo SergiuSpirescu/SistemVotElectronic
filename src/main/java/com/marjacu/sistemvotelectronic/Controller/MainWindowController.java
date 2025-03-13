@@ -1,5 +1,8 @@
 package com.marjacu.sistemvotelectronic.Controller;
 
+import com.marjacu.sistemvotelectronic.Model.JSONHandler.JsonReader;
+import com.marjacu.sistemvotelectronic.Model.VoteSession;
+import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,14 +39,24 @@ public class MainWindowController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        labelSectieVot.setText("Bun venit la Sectia de votare #" + Integer.toString(12345) + "\n");
+        String sourceFile = "resources\\Data Inputs\\simpleDataFile.json";
+        if (!VoteSession.getInstance().isInitialized())
+        {
+            try {
+                JsonReader.initSession(sourceFile, VoteSession.getInstance());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        String nrSesiune = VoteSession.getInstance().getVoteSessionID();
+        String numeSectie = VoteSession.getInstance().getVoteSessionName();
+        labelSectieVot.setText("Bun venit la Sesiunea de Vot " + nrSesiune + " in Sectia de votare #" + numeSectie + "\n");
     }
 
     public void onStartButtonClicked() {
 
         System.out.println("A inceput votul.");
         votInceput.setText("A inceput votul.");
-//        switchToVoteSessionView();
     }
 
     public void onExitButton(){
@@ -53,15 +66,15 @@ public class MainWindowController implements Initializable {
 
     public void switchToVoteSessionView(ActionEvent event) throws IOException {
 
-//        onStartButtonClicked();
+        onStartButtonClicked();
 
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/VoteSessionView.fxml")));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Vot Electronic");
-        stage.setMaximized(true);
         stage.setScene(sessionScene);
+        stage.setMaximized(true);
         stage.show();
     }
 

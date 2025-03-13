@@ -1,6 +1,7 @@
 package com.marjacu.sistemvotelectronic.Model.JSONHandler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 
 import java.io.File;
@@ -11,12 +12,12 @@ public class JsonReader {
 
     private static ObjectMapper mapper = new ObjectMapper();
 
-    public static <VoteSession> void initSession(String dataSource, VoteSession session) throws IOException {
+    public static void initSession(String dataSource, VoteSession session) throws IOException {
 
 
         File file = new File(dataSource);
         VoteSessionContainer container = mapper.readValue(file, VoteSessionContainer.class);
-//        session.storeData(container);
+        session.storeData(container);
 
 
         //TO-DO data integrity checks ?

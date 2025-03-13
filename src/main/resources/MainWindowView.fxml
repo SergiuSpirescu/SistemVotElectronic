@@ -20,8 +20,7 @@
 
     <center>
         <VBox BorderPane.alignment="CENTER"
-              alignment="CENTER" prefHeight="200.0" prefWidth="200.0"
-              style="-fx-border-color: BLUE; -fx-border-style: dashed; -fx-border-width: 3">
+              alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
             <Label fx:id="labelSectieVot" textAlignment="CENTER">
             </Label>
 

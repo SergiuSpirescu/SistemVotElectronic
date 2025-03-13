@@ -1,6 +1,6 @@
 {
-  "voteSessionID": "123456",
-  "voteSessionName": "Test Session Name",
+  "voteSessionID": "Test Session Name",
+  "voteSessionName": "123456",
   "numberOfBallots": 4,
   "ballotList": [
     {

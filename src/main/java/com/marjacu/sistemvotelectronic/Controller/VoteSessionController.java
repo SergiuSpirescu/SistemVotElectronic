@@ -25,8 +25,8 @@ public class VoteSessionController {
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Vot Electronic");
-        stage.setMaximized(true);
         stage.setScene(sessionScene);
+        stage.setMaximized(true);
         stage.show();
     }
 }
