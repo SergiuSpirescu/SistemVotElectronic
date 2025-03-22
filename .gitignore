@@ -28,9 +28,4 @@ hs_err_pid*
 .idea/workspace.xml
 out/
 *.xml
-/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 *.lst
-target/surefire-reports/com.marjacu.ListCandidateTest.txt
-target/surefire-reports/com.marjacu.NominalCandidateTest.txt
-target/surefire-reports/com.marjacu.VoteSessionTest.txt
