@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class JsonReader {
 
-    private static ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper mapper = new ObjectMapper();
 
     public static void initSession(String dataSource, VoteSession session) throws IOException {
 
