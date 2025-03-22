@@ -68,21 +68,28 @@ public class MainWindowController implements Initializable {
     }
 
     public void switchToVoteSessionView(ActionEvent event) throws IOException {
-
         onStartButtonClicked();
 
+        // Load the next view (VoteSessionView)
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
+        Parent sessionRoot = loader.load();
+        // Get the controller of the loaded FXML view
+        VoteSessionController voteSessionController = loader.getController();
+        // Pass the list of items to the controller for dynamic loading into the GridPane
+         voteSessionController.loadBallots(VoteSession.getInstance().getBallotList());
+        // Get the screen size to make sure the window is maximized
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-        Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/VoteSessionView.fxml")));
-        Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Vot Electronic");
+        Scene sessionScene = new Scene(sessionRoot, screenSize.getWidth(), screenSize.getHeight());
+        // Get the stage (current window)
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle(VoteSession.getInstance().getVoteSessionName()); //TODO: Refactor to a label showing which ballot is selected
         stage.setScene(sessionScene);
+        stage.setFullScreenExitHint("");
         stage.setMaximized(true);
         stage.setFullScreen(true);
-        stage.setFullScreenExitHint("");
         stage.setResizable(false);
         stage.setOpacity(1.0);
-        // Start transition
+        // Start the transition
         Platform.runLater(() -> {
             stage.show(); // Show the stage first (ensure the full-screen transition happens after)
 

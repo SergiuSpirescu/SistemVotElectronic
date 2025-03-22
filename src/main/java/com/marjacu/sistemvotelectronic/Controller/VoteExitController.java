@@ -27,11 +27,10 @@ public class VoteExitController {
         Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/MainWindowView.fxml")));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Vot Electronic");
         stage.setScene(sessionScene);
+        stage.setFullScreenExitHint("");
         stage.setMaximized(true);
         stage.setFullScreen(true);
-        stage.setFullScreenExitHint("");
         stage.setResizable(false);
         stage.setOpacity(1.0);
         // Start transition
@@ -40,7 +39,7 @@ public class VoteExitController {
 
             // Apply the fade-in transition after the stage is visible
             FadeTransition fadeIn = new FadeTransition(Duration.millis(300), sessionRoot);
-            fadeIn.setFromValue(0.0);
+            fadeIn.setFromValue(0.4);
             fadeIn.setToValue(1.0);
             fadeIn.setOnFinished(event1 -> {
                 stage.setFullScreen(true);  // Activate full-screen mode here

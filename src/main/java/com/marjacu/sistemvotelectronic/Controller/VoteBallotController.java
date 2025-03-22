@@ -39,7 +39,7 @@ public class VoteBallotController {
 
             // Apply the fade-in transition after the stage is visible
             FadeTransition fadeIn = new FadeTransition(Duration.millis(300), sessionRoot);
-            fadeIn.setFromValue(0.0);
+            fadeIn.setFromValue(0.4);
             fadeIn.setToValue(1.0);
             fadeIn.setOnFinished(event1 -> {
                 stage.setFullScreen(true);  // Activate full-screen mode here
