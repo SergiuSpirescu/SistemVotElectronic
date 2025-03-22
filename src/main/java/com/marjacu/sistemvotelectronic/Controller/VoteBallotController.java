@@ -17,15 +17,16 @@ import javafx.scene.layout.Region;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Objects;
+
 
 public class VoteBallotController {
 
     private String selectedCandidate = "";
     private String selectedID = "";
+    private Button selButton = new Button();
+
     @FXML
     private GridPane candidateItems;
 
@@ -66,6 +67,9 @@ public class VoteBallotController {
                 confirm.showAndWait()
                         .filter(resp -> resp.getText().equals("Da, confirm"))
                         .ifPresent(temp -> {
+
+                            // Vote confirmed, remove ballot option
+                            VoteSessionController.updateSelected(selButton);
 
                             // Load the next view (VoteSessionView)
                             FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
@@ -117,4 +121,7 @@ public class VoteBallotController {
         }
     }
 
+    public void injectButton(Button button) {
+        this.selButton = button;
+    }
 }

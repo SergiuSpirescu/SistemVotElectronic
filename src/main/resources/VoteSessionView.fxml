@@ -27,9 +27,13 @@
     <bottom>
         <VBox BorderPane.alignment="BOTTOM_RIGHT"
         alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
-                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Sesiune Vot"/>
                 <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to BallotView"
-                        onAction="#switchToVoteSessionView"/>
+                        onAction="#switchToVoteBallotView"/>
+        </VBox>
+        <VBox BorderPane.alignment="BOTTOM_RIGHT"
+              alignment="BASELINE_RIGHT" prefHeight="200.0" prefWidth="200.0" visible="false">
+            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to Exit View"
+                    onAction="#switchToExitView"/>
         </VBox>
     </bottom>
 

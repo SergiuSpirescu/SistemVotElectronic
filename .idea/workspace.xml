@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Update .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Added method to switch back to ballot selection view (VoteSessionView)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Model/JSONHandler/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainWindowView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteExitView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/ListCandidateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/NominalCandidateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/marjacu/VoteSessionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainWindowView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainWindowView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/VoteExitView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteExitView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sistem-vot-electronic-1.0.0.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +37,13 @@
         <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RELEASE-0.2.4" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -95,12 +87,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.Start.executor": "Debug",
     "Application.Start_SVE.executor": "Run",
     "Application.com.marjacu.Start.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
     "JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar.executor": "Run",
     "JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar.executor": "Run",
+    "JAR Application.sistem-vot-electronic-0.2.4-SNAPSHOT.jar.executor": "Run",
     "JAR Application.sistem-vot-electronic-1.0.0.jar.executor": "Run",
     "Maven. [clean].executor": "Run",
     "Maven. [compile].executor": "Run",
@@ -162,7 +156,20 @@
       <command value="mvn compiler:compile" />
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.marjacu.sistemvotelectronic.App" />
+      <module name="sistem-vot-electronic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.marjacu.sistemvotelectronic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.marjacu.sistemvotelectronic.Start" />
       <module name="user-identity-rest" />
@@ -219,6 +226,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="Application.Start" />
       <item itemvalue="JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
       <item itemvalue="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
@@ -227,9 +235,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.sistem-vot-electronic-1.0.0.jar" />
         <item itemvalue="JAR Application.sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
         <item itemvalue="JAR Application.original-sistem-vot-electronic-0.2.1-SNAPSHOT.jar" />
-        <item itemvalue="JAR Application.sistem-vot-electronic-1.0.0.jar" />
         <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
@@ -310,7 +319,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740844616276</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RELEASE 0.2.4">
+      <option name="closed" value="true" />
+      <created>1742661458713</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742661458713</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added method to switch back to ballot selection view (VoteSessionView)">
+      <option name="closed" value="true" />
+      <created>1742672899330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742672899330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +346,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -336,6 +373,8 @@
     <MESSAGE value="Ignoring tests for now" />
     <MESSAGE value="Fixed controllers" />
     <MESSAGE value="Update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update .gitignore" />
+    <MESSAGE value="RELEASE 0.2.4" />
+    <MESSAGE value="Added method to switch back to ballot selection view (VoteSessionView)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added method to switch back to ballot selection view (VoteSessionView)" />
   </component>
 </project>
