@@ -5,27 +5,27 @@ import java.util.List;
 public class Ballot {
 
 
-    private String ballotType;
+    private String ballotID;
     private List<BaseCandidate> candidateList;
 
-    public Ballot(String ballotType, List<BaseCandidate> candidateList) {
-        this.ballotType = ballotType;
+    public Ballot(String ballotID, List<BaseCandidate> candidateList) {
+        this.ballotID = ballotID;
         this.candidateList = candidateList;
     }
 
     public Ballot() {
     }
 
-    public Ballot(String ballotType) {
-        this.ballotType = ballotType;
+    public Ballot(String ballotID) {
+        this.ballotID = ballotID;
     }
 
-    public String getBallotType() {
-        return ballotType;
+    public String getBallotID() {
+        return ballotID;
     }
 
-    public void setBallotType(String ballotType) {
-        this.ballotType = ballotType;
+    public void setBallotID(String ballotID) {
+        this.ballotID = ballotID;
     }
 
     public List<BaseCandidate> getCandidateList() {
@@ -39,7 +39,7 @@ public class Ballot {
     @Override
     public String toString() {
         return "Ballot{" +
-                "ballotType='" + ballotType + '\'' +
+                "ballotID='" + ballotID + '\'' +
                 ", candidateList=" + candidateList +
                 '}';
     }

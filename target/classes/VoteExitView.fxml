@@ -18,11 +18,10 @@
     </top>
 
     <center>
-        <VBox BorderPane.alignment="CENTER">
-        <GridPane>
+        <VBox BorderPane.alignment="CENTER"
+              alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
             <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Iesire Vot"/>
             <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to MainView" onAction="#switchToMainView"/>
-        </GridPane>
         </VBox>
     </center>
 

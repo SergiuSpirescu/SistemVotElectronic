@@ -48,8 +48,8 @@ public class MainWindowController implements Initializable {
                 throw new RuntimeException(e);
             }
         }
-        String nrSesiune = VoteSession.getInstance().getVoteSessionID();
-        String numeSectie = VoteSession.getInstance().getVoteSessionName();
+        String nrSesiune = VoteSession.getInstance().getVoteSessionName();
+        String numeSectie = VoteSession.getInstance().getVotePrecintID();
         labelSectieVot.setText("Bun venit la Sesiunea de Vot " + nrSesiune + " in Sectia de votare #" + numeSectie + "\n");
     }
 

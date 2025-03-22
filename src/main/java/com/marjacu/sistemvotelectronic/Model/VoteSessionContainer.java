@@ -6,23 +6,25 @@ public class VoteSessionContainer {
 
 
     public boolean isInitialized = false;
-    private String voteSessionName; //name read from JSON
     private String voteSessionID; //id read from JSON
+    private String voteSessionName; //name read from JSON
+    private String votePrecintID;
     private int numberOfBallots;
     private ArrayList<Ballot> ballotList;
-
     public VoteSessionContainer() {
 
         this.voteSessionName = "";
         this.voteSessionID = "";
+        this.votePrecintID = "";
         this.numberOfBallots = 0;
         this.ballotList = new ArrayList<>();
     }
 
-    public VoteSessionContainer(boolean isInitialized, String voteSessionName, String voteSessionID, int numberOfBallots, ArrayList<Ballot> ballotList) {
+    public VoteSessionContainer(boolean isInitialized, String voteSessionID, String voteSessionName,  String votePrecintID, int numberOfBallots, ArrayList<Ballot> ballotList) {
         this.isInitialized = false;
         this.voteSessionName = voteSessionName;
         this.voteSessionID = voteSessionID;
+        this.votePrecintID = votePrecintID;
         this.numberOfBallots = numberOfBallots;
         this.ballotList = ballotList;
     }
@@ -41,6 +43,14 @@ public class VoteSessionContainer {
 
     public void setVoteSessionName(String voteSessionName) {
         this.voteSessionName = voteSessionName;
+    }
+
+    public String getVotePrecintID() {
+        return votePrecintID;
+    }
+
+    public void setVotePrecintID(String votePrecintID) {
+        this.votePrecintID = votePrecintID;
     }
 
     public String getVoteSessionID() {

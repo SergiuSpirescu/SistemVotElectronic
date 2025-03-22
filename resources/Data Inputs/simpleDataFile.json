@@ -1,10 +1,11 @@
 {
-  "voteSessionID": "Test Session Name",
-  "voteSessionName": "123456",
+  "voteSessionID": "123456",
+  "voteSessionName": "Test Session Name",
+  "votePrecintID": "9876",
   "numberOfBallots": 4,
   "ballotList": [
     {
-      "ballotType": "List",
+      "ballotID": "501",
       "candidateList": [
         {
           "positionCount": 1,
@@ -23,7 +24,7 @@
       ]
     },
 	{
-      "ballotType": "Nominal",
+      "ballotID": "502",
       "candidateList": [
         {
           "positionCount": 1,
@@ -42,7 +43,7 @@
       ]
     },
     {
-      "ballotType": "Nominal",
+      "ballotID": "503",
       "candidateList": [
         {
           "positionCount": 1,
@@ -61,7 +62,7 @@
       ]
     },
     {
-      "ballotType": "List",
+      "ballotID": "504",
       "candidateList": [
         {
           "positionCount": 1,
@@ -75,6 +76,13 @@
           "partyName": "Party2",
           "nameList": [
             "Name15", "Name16"
+          ]
+        },
+        {
+          "positionCount": 3,
+          "partyName": "Party3",
+          "nameList": [
+            "Name69"
           ]
         }
       ]

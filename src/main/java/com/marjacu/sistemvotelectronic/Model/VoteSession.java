@@ -7,11 +7,11 @@ public class VoteSession {
     private static VoteSession theInstance = null; // Singleton instance
 
     public boolean isInitialized = false;
-    private String voteSessionName; //name read from JSON
     private String voteSessionID; //id read from JSON
+    private String voteSessionName; //name read from JSON
+    private String votePrecintID;
     private int numberOfBallots;
     private ArrayList<Ballot> ballotList;
-
     private VoteSession() {
 
         this.voteSessionName = "";
@@ -20,10 +20,11 @@ public class VoteSession {
         this.ballotList = new ArrayList<>();
     }
 
-    private VoteSession(boolean isInitialized, String voteSessionName, String voteSessionID, int numberOfBallots, ArrayList<Ballot> ballotList) {
+    private VoteSession(boolean isInitialized, String voteSessionID, String voteSessionName, String votePrecintID, int numberOfBallots, ArrayList<Ballot> ballotList) {
         this.isInitialized = false;
         this.voteSessionName = voteSessionName;
         this.voteSessionID = voteSessionID;
+        this.votePrecintID = votePrecintID;
         this.numberOfBallots = numberOfBallots;
         this.ballotList = ballotList;
     }
@@ -59,6 +60,14 @@ public class VoteSession {
         this.voteSessionID = voteSessionID;
     }
 
+    public String getVotePrecintID() {
+        return votePrecintID;
+    }
+
+    public void setVotePrecintID(String votePrecintID) {
+        this.votePrecintID = votePrecintID;
+    }
+
     public int getNumberOfBallots() {
         return numberOfBallots;
     }
@@ -89,6 +98,7 @@ public class VoteSession {
 
         this.setVoteSessionID(container.getVoteSessionID());
         this.setVoteSessionName(container.getVoteSessionName());
+        this.setVotePrecintID(container.getVotePrecintID());
         this.setNumberOfBallots(container.getNumberOfBallots());
         this.setBallotList(container.getBallotList());
         this.setInitialized(true);
