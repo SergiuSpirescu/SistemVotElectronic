@@ -31,8 +31,8 @@
                         onAction="#switchToVoteBallotView"/>
         </VBox>
         <VBox BorderPane.alignment="BOTTOM_RIGHT"
-              alignment="BASELINE_RIGHT" prefHeight="200.0" prefWidth="200.0" visible="false">
-            <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to Exit View"
+              alignment="BASELINE_RIGHT" prefHeight="200.0" prefWidth="200.0">
+            <Button fx:id="finishButton" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to Exit View"
                     onAction="#switchToExitView"/>
         </VBox>
     </bottom>

@@ -1,6 +1,8 @@
 package com.marjacu.sistemvotelectronic.Controller;
 
 import com.marjacu.sistemvotelectronic.Model.Ballot;
+import com.marjacu.sistemvotelectronic.Model.VoteSession;
+import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -29,8 +31,10 @@ public class VoteSessionController {
     @FXML
     private GridPane ballotItems;
 
-    public void onExitButton(ActionEvent actionEvent) {
+    @FXML
+    private Button finishButton;
 
+    public void onExitButton(ActionEvent actionEvent) {
         System.out.println("Aplicatie oprita din butonul X din: Sesiune Vot");
         System.exit(0);
     }
@@ -100,7 +104,6 @@ public class VoteSessionController {
         ballotItems.setMaxSize(Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE);
     }
 
-
     public void switchToVoteBallotView(ActionEvent event) throws IOException {
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/VoteBallotView.fxml")));
@@ -130,6 +133,10 @@ public class VoteSessionController {
 
     public static void updateSelected (Button button) {
         selectedButtons.add(button.getId());
+    }
+
+    public void checkFinish() {
+        this.finishButton.setVisible(selectedButtons.size() == VoteSession.getInstance().getNumberOfBallots());
     }
 
     public void switchToExitView(ActionEvent event) throws IOException{

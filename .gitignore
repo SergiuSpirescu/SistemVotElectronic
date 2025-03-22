@@ -34,3 +34,4 @@ out/
 target/surefire-reports/com.marjacu.ListCandidateTest.txt
 target/surefire-reports/com.marjacu.NominalCandidateTest.txt
 target/surefire-reports/com.marjacu.VoteSessionTest.txt
+/target/classes/

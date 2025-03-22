@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class VoteBallotController {
@@ -61,58 +62,61 @@ public class VoteBallotController {
     public void switchToVoteSessionView(ActionEvent event) throws IOException {
         if (!selectedID.isEmpty()) {
 
+            AtomicBoolean confirmed = new AtomicBoolean(false);
             Alert confirm = new Alert(Alert.AlertType.CONFIRMATION, "Confirmați selecția?\n" +
                     selectedCandidate, new ButtonType("Da, confirm"), new ButtonType("Nu, mergi înapoi"));
             confirm.initOwner((Stage) ((Node) event.getSource()).getScene().getWindow());
                 confirm.showAndWait()
                         .filter(resp -> resp.getText().equals("Da, confirm"))
-                        .ifPresent(temp -> {
-
-                            // Vote confirmed, remove ballot option
-                            VoteSessionController.updateSelected(selButton);
-
-                            // Load the next view (VoteSessionView)
-                            FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
-                            Parent sessionRoot = null;
-                            try {
-                                sessionRoot = loader.load();
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
-                            // Get the controller of the loaded FXML view
-                            VoteSessionController voteSessionController = loader.getController();
-                            // Pass the list of items to the controller for dynamic loading into the GridPane
-                            try {
-                                voteSessionController.loadBallots(VoteSession.getInstance().getBallotList());
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
-                            // Get the screen size to make sure the window is maximized
-                            Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-                            Scene sessionScene = new Scene(sessionRoot, screenSize.getWidth(), screenSize.getHeight());
-                            // Get the stage (current window)
-                            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                            stage.setScene(sessionScene);
-                            stage.setFullScreenExitHint("");
-                            stage.setFullScreen(true);
-                            stage.setResizable(false);
-                            stage.setOpacity(1.0);
-                            // Start the transition
-                            Parent finalSessionRoot = sessionRoot;
-                            Platform.runLater(() -> {
-                                stage.show(); // Show the stage first (ensure the full-screen transition happens after)
-
-                                // Apply the fade-in transition after the stage is visible
-                                FadeTransition fadeIn = new FadeTransition(Duration.millis(300), finalSessionRoot);
-                                fadeIn.setFromValue(0.7);
-                                fadeIn.setToValue(1.0);
-                                fadeIn.setOnFinished(event1 -> {
-                                    stage.setFullScreen(true);  // Activate full-screen mode here
-                                    stage.show();
-                                });
-                                fadeIn.play();
-                            });
-                        });
+                        .ifPresent(t -> { confirmed.set(true);});
+            if (confirmed.get()) {
+                // Vote confirmed, remove ballot option
+                VoteSessionController.updateSelected(selButton);
+                // Load the next view (VoteSessionView)
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
+                Parent sessionRoot = null;
+                try {
+                    sessionRoot = loader.load();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                // Get the controller of the loaded FXML view
+                VoteSessionController voteSessionController = loader.getController();
+                voteSessionController.checkFinish();
+                // Pass the list of items to the controller for dynamic loading into the GridPane
+                try {
+                    voteSessionController.loadBallots(VoteSession.getInstance().getBallotList());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                // Get the screen size to make sure the window is maximized
+                Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
+                Scene sessionScene = new Scene(sessionRoot, screenSize.getWidth(), screenSize.getHeight());
+                // Get the stage (current window)
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(sessionScene);
+                stage.setFullScreenExitHint("");
+                stage.setFullScreen(true);
+                stage.setResizable(false);
+                stage.setOpacity(1.0);
+                // Start the transition
+                Parent finalSessionRoot = sessionRoot;
+                Platform.runLater(() -> {
+                    stage.show(); // Show the stage first (ensure the full-screen transition happens after)
+                    // Apply the fade-in transition after the stage is visible
+                    FadeTransition fadeIn = new FadeTransition(Duration.millis(300), finalSessionRoot);
+                    fadeIn.setFromValue(0.7);
+                    fadeIn.setToValue(1.0);
+                    fadeIn.setOnFinished(event1 -> {
+                        stage.setFullScreen(true);  // Activate full-screen mode here
+                        stage.show();
+                    });
+                    fadeIn.play();
+                });
+            } else {
+                selectedCandidate = "";
+                selectedID = "";
+            }
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Nu ați selectat un candidat!");
             alert.setHeaderText("Atenție!");
