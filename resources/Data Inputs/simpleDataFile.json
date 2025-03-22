@@ -6,6 +6,7 @@
   "ballotList": [
     {
       "ballotID": "501",
+      "ballotName": "Ballot1",
       "candidateList": [
         {
           "positionCount": 1,
@@ -25,6 +26,7 @@
     },
 	{
       "ballotID": "502",
+      "ballotName": "Ballot2",
       "candidateList": [
         {
           "positionCount": 1,
@@ -44,6 +46,7 @@
     },
     {
       "ballotID": "503",
+      "ballotName": "Ballot3",
       "candidateList": [
         {
           "positionCount": 1,
@@ -63,6 +66,7 @@
     },
     {
       "ballotID": "504",
+      "ballotName": "Ballot4",
       "candidateList": [
         {
           "positionCount": 1,

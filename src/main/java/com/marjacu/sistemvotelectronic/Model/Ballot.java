@@ -6,10 +6,13 @@ public class Ballot {
 
 
     private String ballotID;
-    private List<BaseCandidate> candidateList;
 
-    public Ballot(String ballotID, List<BaseCandidate> candidateList) {
+    private String ballotName;
+
+    private List<BaseCandidate> candidateList;
+    public Ballot(String ballotID, String ballotName, List<BaseCandidate> candidateList) {
         this.ballotID = ballotID;
+        this.ballotName = ballotName;
         this.candidateList = candidateList;
     }
 
@@ -28,6 +31,14 @@ public class Ballot {
         this.ballotID = ballotID;
     }
 
+    public String getBallotName() {
+        return ballotName;
+    }
+
+    public void setBallotName(String ballotName) {
+        this.ballotName = ballotName;
+    }
+
     public List<BaseCandidate> getCandidateList() {
         return candidateList;
     }
@@ -40,6 +51,7 @@ public class Ballot {
     public String toString() {
         return "Ballot{" +
                 "ballotID='" + ballotID + '\'' +
+                "ballotName='" + ballotName + '\'' +
                 ", candidateList=" + candidateList +
                 '}';
     }

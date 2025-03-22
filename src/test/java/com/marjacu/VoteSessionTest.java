@@ -5,12 +5,9 @@ import com.marjacu.sistemvotelectronic.Model.JSONHandler.JsonReader;
 import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
@@ -49,16 +46,13 @@ public class VoteSessionTest {
         @Test
         public void testBallotListItems() {
            ArrayList<Ballot> ballots = testVoteSessionInstance.getBallotList();
-           assertNotEquals(0, ballots.size());
-           testVoteSessionInstance.getBallotList()
-                   .stream()
-                   .collect(Collectors.toList())
-                   .forEach(s -> System.out.println(s.getCandidateList()));
-        }
-
-        @Test
-        public void testGetNumberOfBallots() {
-            assertEquals(1, testVoteSessionInstance.getNumberOfBallots());
+           assertEquals(4, ballots.size());
+            new ArrayList<>(testVoteSessionInstance.getBallotList())
+                   .forEach(s -> {
+                       System.out.println("Ballot ID: " + s.getBallotID());
+                       System.out.println("Ballot Name: " + s.getBallotName());
+                       System.out.println(s.getCandidateList().toString());
+                   });
         }
 
         @After
