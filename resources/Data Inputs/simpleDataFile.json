@@ -10,6 +10,7 @@
       "candidateList": [
         {
           "positionCount": 1,
+          "candidateID": "501-1",
           "partyName": "Party1",
           "nameList": [
             "Name1", "Name2"
@@ -17,6 +18,7 @@
         },
         {
           "positionCount": 2,
+          "candidateID": "501-2",
           "partyName": "Party2",
           "nameList": [
             "Name3", "Name4"
@@ -30,6 +32,7 @@
       "candidateList": [
         {
           "positionCount": 1,
+          "candidateID": "502-1",
           "partyName": "Party1",
           "nameList": [
             "Name5", "Name6"
@@ -37,6 +40,7 @@
         },
         {
           "positionCount": 2,
+          "candidateID": "502-2",
           "partyName": "Party2",
           "nameList": [
             "Name7", "Name8"
@@ -50,6 +54,7 @@
       "candidateList": [
         {
           "positionCount": 1,
+          "candidateID": "503-1",
           "partyName": "Party1",
           "nameList": [
             "Name9", "Name10"
@@ -57,6 +62,7 @@
         },
         {
           "positionCount": 2,
+          "candidateID": "503-2",
           "partyName": "Party2",
           "nameList": [
             "Name11", "Name12"
@@ -70,6 +76,7 @@
       "candidateList": [
         {
           "positionCount": 1,
+          "candidateID": "504-1",
           "partyName": "Party1",
           "nameList": [
             "Name13", "Name14"
@@ -77,6 +84,7 @@
         },
         {
           "positionCount": 2,
+          "candidateID": "504-2",
           "partyName": "Party2",
           "nameList": [
             "Name15", "Name16"
@@ -84,6 +92,7 @@
         },
         {
           "positionCount": 3,
+          "candidateID": "504-3",
           "partyName": "Party3",
           "nameList": [
             "Name69"

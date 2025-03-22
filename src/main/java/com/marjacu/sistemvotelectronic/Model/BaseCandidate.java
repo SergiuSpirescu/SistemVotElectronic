@@ -5,11 +5,13 @@ import java.util.List;
 public class BaseCandidate {
 
     private int positionCount;
+    private String candidateID;
     private String partyName;
     private List<String> nameList;
 
-    public BaseCandidate(int positionCount, String partyName, List<String> nameList) {
+    public BaseCandidate(int positionCount, String candidateID, String partyName, List<String> nameList) {
         this.positionCount = positionCount;
+        this.candidateID = candidateID;
         this.partyName = partyName;
         this.nameList = nameList;
     }
@@ -43,11 +45,28 @@ public class BaseCandidate {
 
     @Override
     public String toString() {
-        return "BaseCandidate{" +
-                "positionCount=" + positionCount +
-                ", partyName='" + partyName + '\'' +
-                ", nameList=" + nameList.toString() +
-                '}';
+        StringBuilder names = new StringBuilder();
+        for (String s : this.nameList) {
+            names.append("\n\t\t").append(s);
+        }
+        String plural;
+        if (this.nameList.size() == 1) {
+            plural = "Candidat";
+        } else {
+            plural = "Candidați";
+        }
+
+        return "Poziția " + positionCount +
+                "\n\tPartid " + partyName  +
+                "\n\tNume " + plural + ":" + names;
+    }
+
+    public String getCandidateID() {
+        return this.candidateID;
+    }
+
+    public void setCandidateID(String candidateID) {
+        this.candidateID = candidateID;
     }
 }
 

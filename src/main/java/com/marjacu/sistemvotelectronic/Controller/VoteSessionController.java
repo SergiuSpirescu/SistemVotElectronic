@@ -1,7 +1,6 @@
 package com.marjacu.sistemvotelectronic.Controller;
 
 import com.marjacu.sistemvotelectronic.Model.Ballot;
-import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -20,7 +19,6 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class VoteSessionController {
@@ -94,7 +92,7 @@ public class VoteSessionController {
     }
 
 
-    public void switchToBallotView(ActionEvent event) throws IOException {
+    public void switchToVoteSessionView(ActionEvent event) throws IOException {
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         Parent sessionRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/VoteBallotView.fxml")));
         Scene sessionScene = new Scene(sessionRoot,screenSize.getWidth(), screenSize.getHeight());

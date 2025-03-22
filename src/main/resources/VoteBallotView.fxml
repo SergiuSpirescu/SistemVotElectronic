@@ -27,8 +27,8 @@
 
     <bottom>
         <VBox BorderPane.alignment="BOTTOM_RIGHT"
-        alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
-            <Button text="Switch to FinalView" onAction="#switchToFinalView"/>
+        alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0">
+            <Button text="Înapoi la Selecție Buletin" onAction="#switchToVoteSessionView"/>
         </VBox>
     </bottom>
 

@@ -29,7 +29,7 @@
         alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
                 <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Placeholder Sesiune Vot"/>
                 <Button GridPane.columnIndex="0" GridPane.rowIndex="1" text="Switch to BallotView"
-                        onAction="#switchToBallotView"/>
+                        onAction="#switchToVoteSessionView"/>
         </VBox>
     </bottom>
 
