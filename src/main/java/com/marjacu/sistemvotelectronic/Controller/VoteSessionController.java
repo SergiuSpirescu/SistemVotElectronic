@@ -26,7 +26,7 @@ import java.util.Objects;
 public class VoteSessionController {
 
     @FXML
-    GridPane ballotItems;
+    private GridPane ballotItems;
 
     public void onExitButton(ActionEvent actionEvent) {
 
@@ -60,7 +60,7 @@ public class VoteSessionController {
                 assert ballotRoot != null;
                 Parent finalBallotRoot = ballotRoot;
                 VoteBallotController voteBallotController = loader.getController();
-//                voteBallotController.loadCandidates();
+                voteBallotController.loadCandidates(ballot.getCandidateList());
                 Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
                 Scene sessionScene = new Scene(ballotRoot, screenSize.getWidth(), screenSize.getHeight());
                 // Get the stage (current window)

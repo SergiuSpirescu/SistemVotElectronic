@@ -1,16 +1,16 @@
 package com.marjacu.sistemvotelectronic.Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ballot {
 
 
     private String ballotID;
-
     private String ballotName;
+    private ArrayList<BaseCandidate> candidateList;
 
-    private List<BaseCandidate> candidateList;
-    public Ballot(String ballotID, String ballotName, List<BaseCandidate> candidateList) {
+    public Ballot(String ballotID, String ballotName, ArrayList<BaseCandidate> candidateList) {
         this.ballotID = ballotID;
         this.ballotName = ballotName;
         this.candidateList = candidateList;
@@ -39,11 +39,11 @@ public class Ballot {
         this.ballotName = ballotName;
     }
 
-    public List<BaseCandidate> getCandidateList() {
+    public ArrayList<BaseCandidate> getCandidateList() {
         return candidateList;
     }
 
-    public void setCandidateList(List<BaseCandidate> candidateList) {
+    public void setCandidateList(ArrayList<BaseCandidate> candidateList) {
         this.candidateList = candidateList;
     }
 
