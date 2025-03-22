@@ -5,6 +5,8 @@ import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,6 +25,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class VoteSessionController {
 
@@ -33,6 +36,7 @@ public class VoteSessionController {
 
     @FXML
     private Button finishButton;
+    private BooleanProperty finished = new SimpleBooleanProperty(false);
 
     public void onExitButton(ActionEvent actionEvent) {
         System.out.println("Aplicatie oprita din butonul X din: Sesiune Vot");
@@ -102,6 +106,7 @@ public class VoteSessionController {
             ballotItems.add(button, col, row);
         });
         ballotItems.setMaxSize(Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE);
+        finishButton.visibleProperty().bind(finished);
     }
 
     public void switchToVoteBallotView(ActionEvent event) throws IOException {
@@ -136,7 +141,7 @@ public class VoteSessionController {
     }
 
     public void checkFinish() {
-        this.finishButton.setVisible(selectedButtons.size() == VoteSession.getInstance().getNumberOfBallots());
+        this.finished.set(selectedButtons.size() == VoteSession.getInstance().getNumberOfBallots());
     }
 
     public void switchToExitView(ActionEvent event) throws IOException{
