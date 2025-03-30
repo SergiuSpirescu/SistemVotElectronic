@@ -20,7 +20,7 @@ public class VoteSessionContainer {
         this.ballotList = new ArrayList<>();
     }
 
-    public VoteSessionContainer(boolean isInitialized, String voteSessionID, String voteSessionName,  String votePrecintID, int numberOfBallots, ArrayList<Ballot> ballotList) {
+    public VoteSessionContainer(String voteSessionID, String voteSessionName,  String votePrecintID, int numberOfBallots, ArrayList<Ballot> ballotList) {
         this.isInitialized = false;
         this.voteSessionName = voteSessionName;
         this.voteSessionID = voteSessionID;
