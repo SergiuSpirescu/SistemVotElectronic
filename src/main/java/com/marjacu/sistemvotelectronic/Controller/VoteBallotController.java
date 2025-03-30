@@ -51,7 +51,7 @@ public class VoteBallotController {
             name.setOnAction(event -> {
                 selectedID = name.getId();
                 selectedCandidate = candidate.toString();
-                System.out.println(selectedCandidate);
+//                System.out.println(selectedCandidate); Removed for the moment, no need to debug if button pressed
             });
 
             candidateItems.add(name, row, col);
@@ -72,6 +72,7 @@ public class VoteBallotController {
             if (confirmed.get()) {
                 // Vote confirmed, remove ballot option
                 VoteSessionController.updateSelected(selButton);
+                VoteSession.getInstance().addConfirmedVotes(selectedCandidate);
                 // Load the next view (VoteSessionView)
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
                 Parent sessionRoot = null;

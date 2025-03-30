@@ -1,6 +1,7 @@
 package com.marjacu.sistemvotelectronic.Model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //Singleton Class
 public class VoteSession {
@@ -12,12 +13,15 @@ public class VoteSession {
     private String votePrecintID;
     private int numberOfBallots;
     private ArrayList<Ballot> ballotList;
+    private ArrayList<String> confirmedVotes;
+
     private VoteSession() {
 
         this.voteSessionName = "";
         this.voteSessionID = "";
         this.numberOfBallots = 0;
         this.ballotList = new ArrayList<>();
+        this.confirmedVotes = new ArrayList<>();
     }
 
     private VoteSession(boolean isInitialized, String voteSessionID, String voteSessionName, String votePrecintID, int numberOfBallots, ArrayList<Ballot> ballotList) {
@@ -102,6 +106,17 @@ public class VoteSession {
         this.setNumberOfBallots(container.getNumberOfBallots());
         this.setBallotList(container.getBallotList());
         this.setInitialized(true);
+    }
+
+    //TODO: Refactor with correct values to send to Server regarding the selected votes
+    public void addConfirmedVotes(String vote) {
+        this.confirmedVotes.add(vote);
+    }
+
+    public void getConfirmedVotes() {
+        this.confirmedVotes.forEach(
+                v -> System.out.println(v + "\n\n")
+        );
     }
 
 }

@@ -168,6 +168,9 @@ public class VoteSessionController {
                 stage.show();
             });
             fadeIn.play();
+
+            System.out.println("\n\n============ Rezultate finale ============\n\n");
+            VoteSession.getInstance().getConfirmedVotes();
         });
     }
 }
