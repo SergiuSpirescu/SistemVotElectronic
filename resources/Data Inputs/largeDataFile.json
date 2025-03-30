@@ -8,7 +8,9 @@
       "ballotID": "601",
       "ballotName": "Ballot1",
       "candidateList": [
-        { "positionCount": 1, "candidateID": "601-1", "partyName": "Party1", "nameList": ["Name1", "Name2", "Name3"] }
+        { "positionCount": 1, "candidateID": "601-1", "partyName": "Party1", "nameList": ["Name1", "Name2", "Name3"] },
+        { "positionCount": 2, "candidateID": "601-2", "partyName": "Party2", "nameList": ["Name4", "Name5"] },
+        { "positionCount": 3, "candidateID": "601-3", "partyName": "Party3", "nameList": ["Name6", "Name7"] }
       ]
     },
     {
@@ -23,7 +25,8 @@
       "ballotID": "603",
       "ballotName": "Ballot3",
       "candidateList": [
-        { "positionCount": 1, "candidateID": "603-1", "partyName": "Party4", "nameList": ["Name9", "Name10", "Name11", "Name12"] }
+        { "positionCount": 1, "candidateID": "603-1", "partyName": "Party4", "nameList": ["Name9", "Name10", "Name11", "Name12"] },
+        { "positionCount": 2, "candidateID": "603-2", "partyName": "Party5", "nameList": ["Name13", "Name14"] }
       ]
     },
     {
@@ -76,7 +79,8 @@
       "ballotID": "609",
       "ballotName": "Ballot9",
       "candidateList": [
-        { "positionCount": 1, "candidateID": "609-1", "partyName": "Party21", "nameList": ["Name73", "Name74", "Name75"] }
+        { "positionCount": 1, "candidateID": "609-1", "partyName": "Party21", "nameList": ["Name73", "Name74", "Name75"] },
+        { "positionCount": 2, "candidateID": "609-2", "partyName": "Party22", "nameList": ["Name76", "Name77"] }
       ]
     },
     {
