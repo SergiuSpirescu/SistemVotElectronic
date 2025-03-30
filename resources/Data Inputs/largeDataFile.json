@@ -1,0 +1,91 @@
+{
+  "voteSessionID": "123456",
+  "voteSessionName": "Test Session Name",
+  "votePrecintID": "9876",
+  "numberOfBallots": 10,
+  "ballotList": [
+    {
+      "ballotID": "601",
+      "ballotName": "Ballot1",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "601-1", "partyName": "Party1", "nameList": ["Name1", "Name2", "Name3"] }
+      ]
+    },
+    {
+      "ballotID": "602",
+      "ballotName": "Ballot2",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "602-1", "partyName": "Party2", "nameList": ["Name4", "Name5"] },
+        { "positionCount": 2, "candidateID": "602-2", "partyName": "Party3", "nameList": ["Name6", "Name7", "Name8"] }
+      ]
+    },
+    {
+      "ballotID": "603",
+      "ballotName": "Ballot3",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "603-1", "partyName": "Party4", "nameList": ["Name9", "Name10", "Name11", "Name12"] }
+      ]
+    },
+    {
+      "ballotID": "604",
+      "ballotName": "Ballot4",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "604-1", "partyName": "Party5", "nameList": ["Name13", "Name14"] },
+        { "positionCount": 2, "candidateID": "604-2", "partyName": "Party6", "nameList": ["Name15", "Name16", "Name17", "Name18", "Name19"] }
+      ]
+    },
+    {
+      "ballotID": "605",
+      "ballotName": "Ballot5",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "605-1", "partyName": "Party7", "nameList": ["Name20", "Name21", "Name22", "Name23"] },
+        { "positionCount": 2, "candidateID": "605-2", "partyName": "Party8", "nameList": ["Name24", "Name25", "Name26"] },
+        { "positionCount": 3, "candidateID": "605-3", "partyName": "Party9", "nameList": ["Name27"] }
+      ]
+    },
+    {
+      "ballotID": "606",
+      "ballotName": "Ballot6",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "606-1", "partyName": "Party10", "nameList": ["Name28", "Name29"] },
+        { "positionCount": 2, "candidateID": "606-2", "partyName": "Party11", "nameList": ["Name30", "Name31", "Name32", "Name33"] }
+      ]
+    },
+    {
+      "ballotID": "607",
+      "ballotName": "Ballot7",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "607-1", "partyName": "Party12", "nameList": ["Name34", "Name35", "Name36", "Name37", "Name38", "Name39"] },
+        { "positionCount": 2, "candidateID": "607-2", "partyName": "Party13", "nameList": ["Name40", "Name41"] },
+        { "positionCount": 3, "candidateID": "607-3", "partyName": "Party14", "nameList": ["Name42", "Name43"] },
+        { "positionCount": 4, "candidateID": "607-4", "partyName": "Party15", "nameList": ["Name44"] }
+      ]
+    },
+    {
+      "ballotID": "608",
+      "ballotName": "Ballot8",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "608-1", "partyName": "Party16", "nameList": ["Name45", "Name46"] },
+        { "positionCount": 2, "candidateID": "608-2", "partyName": "Party17", "nameList": ["Name47", "Name48", "Name49", "Name50", "Name51", "Name52", "Name53", "Name54", "Name55", "Name56", "Name57", "Name58", "Name59", "Name60", "Name61", "Name62", "Name63", "Name64", "Name65", "Name66"] },
+        { "positionCount": 3, "candidateID": "608-3", "partyName": "Party18", "nameList": ["Name67", "Name68"] },
+        { "positionCount": 4, "candidateID": "608-4", "partyName": "Party19", "nameList": ["Name69", "Name70", "Name71"] },
+        { "positionCount": 5, "candidateID": "608-5", "partyName": "Party20", "nameList": ["Name72"] }
+      ]
+    },
+    {
+      "ballotID": "609",
+      "ballotName": "Ballot9",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "609-1", "partyName": "Party21", "nameList": ["Name73", "Name74", "Name75"] }
+      ]
+    },
+    {
+      "ballotID": "610",
+      "ballotName": "Ballot10",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "610-1", "partyName": "Party22", "nameList": ["Name76", "Name77", "Name78", "Name79"] },
+        { "positionCount": 2, "candidateID": "610-2", "partyName": "Party23", "nameList": ["Name80", "Name81", "Name82", "Name83", "Name84", "Name85"] }
+      ]
+    }
+  ]
+}

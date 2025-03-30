@@ -1,0 +1,23 @@
+{
+  "voteSessionID": "123456",
+  "voteSessionName": "Test Session Name",
+  "votePrecintID": "9876",
+  "numberOfBallots": 2,
+  "ballotList": [
+    {
+      "ballotID": "701",
+      "ballotName": "SingleCandidateBallot",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "701-1", "partyName": "Party1", "nameList": ["CandidateA"] }
+      ]
+    },
+    {
+      "ballotID": "702",
+      "ballotName": "TwoCandidatesBallot",
+      "candidateList": [
+        { "positionCount": 1, "candidateID": "702-1", "partyName": "Party2", "nameList": ["CandidateB"] },
+        { "positionCount": 2, "candidateID": "702-2", "partyName": "Party3", "nameList": ["CandidateC"] }
+      ]
+    }
+  ]
+}
