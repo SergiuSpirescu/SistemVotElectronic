@@ -40,8 +40,13 @@ public class VoteBallotController {
         candidateItems.getChildren().clear(); // Clear any existing items before adding new items
 
         candidateList.forEach(candidate -> {
-            Button name = new Button(candidate.getNameList().toString() + "\n" +
-                    candidate.getPartyName());
+            Button name = new Button();
+            // set button text for each candidate position
+            StringBuilder buttonText = new StringBuilder();
+            buttonText.append("Poziția ").append(candidate.getPositionCount());
+            buttonText.append("\n").append(candidate.getPartyName());
+            candidate.getNameList().forEach(n -> buttonText.append("\n\t").append(n));
+            name.setText(buttonText.toString());
             name.setId(candidate.getCandidateID());
 
             int i = candidateList.indexOf(candidate);
@@ -53,7 +58,6 @@ public class VoteBallotController {
                 selectedCandidate = candidate.toString();
 //                System.out.println(selectedCandidate); Removed for the moment, no need to debug if button pressed
             });
-
             candidateItems.add(name, row, col);
         });
         candidateItems.setMaxSize(Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE);
@@ -65,17 +69,17 @@ public class VoteBallotController {
             AtomicBoolean confirmed = new AtomicBoolean(false);
             Alert confirm = new Alert(Alert.AlertType.CONFIRMATION, "Confirmați selecția?\n" +
                     selectedCandidate, new ButtonType("Da, confirm"), new ButtonType("Nu, mergi înapoi"));
-            confirm.initOwner((Stage) ((Node) event.getSource()).getScene().getWindow());
-                confirm.showAndWait()
-                        .filter(resp -> resp.getText().equals("Da, confirm"))
-                        .ifPresent(t -> { confirmed.set(true);});
+            confirm.initOwner(((Node) event.getSource()).getScene().getWindow());
+            confirm.showAndWait()
+                    .filter(resp -> resp.getText().equals("Da, confirm"))
+                    .ifPresent(t -> confirmed.set(true));
             if (confirmed.get()) {
                 // Vote confirmed, remove ballot option
                 VoteSessionController.updateSelected(selButton);
                 VoteSession.getInstance().addConfirmedVotes(this.selButton.getId() + "\n" + selectedCandidate);
                 // Load the next view (VoteSessionView)
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
-                Parent sessionRoot = null;
+                Parent sessionRoot;
                 try {
                     sessionRoot = loader.load();
                 } catch (IOException e) {
@@ -121,7 +125,7 @@ public class VoteBallotController {
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Nu ați selectat un candidat!");
             alert.setHeaderText("Atenție!");
-            alert.initOwner((Stage) ((Node) event.getSource()).getScene().getWindow());
+            alert.initOwner(((Node) event.getSource()).getScene().getWindow());
             alert.show();
         }
     }

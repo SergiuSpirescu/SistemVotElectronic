@@ -15,8 +15,8 @@
       "ballotID": "702",
       "ballotName": "TwoCandidatesBallot",
       "candidateList": [
-        { "positionCount": 1, "candidateID": "702-1", "partyName": "Party2", "nameList": ["CandidateB"] },
-        { "positionCount": 2, "candidateID": "702-2", "partyName": "Party3", "nameList": ["CandidateC"] }
+        { "positionCount": 1, "candidateID": "702-1", "partyName": "Party2", "nameList": ["CandidateB", "CandidateC"] },
+        { "positionCount": 2, "candidateID": "702-2", "partyName": "Party3", "nameList": ["CandidateD", "CandidateE", "CandidateF"] }
       ]
     }
   ]
