@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Added method to switch back to ballot selection view (VoteSessionView)">
+    <list default="true" id="8fba208d-26b0-45af-b132-e17371f1d764" name="Default Changelist" comment="Created Snapshot RELEASE-0.3.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteBallotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/marjacu/sistemvotelectronic/Controller/VoteSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/VoteSessionView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VoteBallotView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/VoteSessionView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sistem-vot-electronic-0.2.4-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sistem-vot-electronic-1.0.0.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,24 +37,50 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="RELEASE-0.2.4" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;SergiuSpirescu&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOGaND786RiJsn",
+        "number": 13
+      },
+      "lastSeen": 1743945023559
+    }
+  ]
+}]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SergiuSpirescu/SistemVotElectronic.git",
+    "accountId": "ed3c7c09-6eed-4fea-a1bb-1bf654dc1635"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "SergiuSpirescu",
+    "repository": "SistemVotElectronic"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SergiuSpirescu/SistemVotElectronic.git&quot;,
-    &quot;accountId&quot;: &quot;ed3c7c09-6eed-4fea-a1bb-1bf654dc1635&quot;
-  }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -113,13 +137,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "RELEASE-0.3.1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/SS-PC/Ciorne/SistemVotElectronic/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.16979656",
-    "settings.editor.selected.configurable": "build.tools"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -335,7 +359,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742672899330</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made finished BooleanProperty final in VoteSessionController">
+      <option name="closed" value="true" />
+      <created>1743944016164</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743944016164</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added reset method to clear selected ballots when active vote session exited">
+      <option name="closed" value="true" />
+      <created>1743944600555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743944600555</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Imports linting">
+      <option name="closed" value="true" />
+      <created>1743944893719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743944893719</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created Snapshot RELEASE-0.3.1">
+      <option name="closed" value="true" />
+      <created>1743945332450</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743945332450</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +431,10 @@
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="RELEASE 0.2.4" />
     <MESSAGE value="Added method to switch back to ballot selection view (VoteSessionView)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method to switch back to ballot selection view (VoteSessionView)" />
+    <MESSAGE value="Made finished BooleanProperty final in VoteSessionController" />
+    <MESSAGE value="Added reset method to clear selected ballots when active vote session exited" />
+    <MESSAGE value="Imports linting" />
+    <MESSAGE value="Created Snapshot RELEASE-0.3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Snapshot RELEASE-0.3.1" />
   </component>
 </project>
