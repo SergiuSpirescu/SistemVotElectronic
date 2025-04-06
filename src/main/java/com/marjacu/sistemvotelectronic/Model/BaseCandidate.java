@@ -57,6 +57,7 @@ public class BaseCandidate {
         }
 
         return "Poziția " + positionCount +
+                "\n\tID " + candidateID +
                 "\n\tPartid " + partyName  +
                 "\n\tNume " + plural + ":" + names;
     }

@@ -2,7 +2,6 @@ package com.marjacu.sistemvotelectronic.Controller;
 
 import com.marjacu.sistemvotelectronic.Model.JSONHandler.JsonReader;
 import com.marjacu.sistemvotelectronic.Model.VoteSession;
-import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -18,10 +17,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
@@ -42,7 +39,7 @@ public class MainWindowController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        String sourceFile = "resources\\Data Inputs\\simpleDataFile.json";
+        String sourceFile = "resources\\Data Inputs\\basicDataFile.json";
         if (!VoteSession.getInstance().isInitialized())
         {
             try {

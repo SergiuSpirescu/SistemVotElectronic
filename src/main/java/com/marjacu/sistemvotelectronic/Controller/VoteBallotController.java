@@ -72,7 +72,7 @@ public class VoteBallotController {
             if (confirmed.get()) {
                 // Vote confirmed, remove ballot option
                 VoteSessionController.updateSelected(selButton);
-                VoteSession.getInstance().addConfirmedVotes(selectedCandidate);
+                VoteSession.getInstance().addConfirmedVotes(this.selButton.getId() + "\n" + selectedCandidate);
                 // Load the next view (VoteSessionView)
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/VoteSessionView.fxml"));
                 Parent sessionRoot = null;

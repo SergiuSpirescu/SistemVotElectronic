@@ -169,7 +169,7 @@ public class VoteSessionController {
             });
             fadeIn.play();
 
-            System.out.println("\n\n============ Rezultate finale ============\n\n");
+            System.out.println("\n\n============ Alegeri pe toate buletinele de vot ============\n\n");
             VoteSession.getInstance().getConfirmedVotes();
         });
     }
