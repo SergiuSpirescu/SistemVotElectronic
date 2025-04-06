@@ -1,7 +1,6 @@
 package com.marjacu.sistemvotelectronic.Model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Ballot {
 

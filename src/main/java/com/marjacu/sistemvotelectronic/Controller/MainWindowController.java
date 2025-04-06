@@ -23,7 +23,6 @@ import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
 
-    private int idSectieVot;
     @FXML
     private Label labelSectieVot = new Label("");
 
@@ -33,9 +32,6 @@ public class MainWindowController implements Initializable {
     @FXML
     private Label votInceput = new Label("");
 
-    public void setIdSectieVot(int idSectieVot) {
-        this.idSectieVot = idSectieVot;
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
