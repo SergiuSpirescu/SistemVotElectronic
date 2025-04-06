@@ -2,7 +2,6 @@ package com.marjacu.sistemvotelectronic.Controller;
 
 import com.marjacu.sistemvotelectronic.Model.Ballot;
 import com.marjacu.sistemvotelectronic.Model.VoteSession;
-import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
@@ -20,12 +19,11 @@ import javafx.scene.layout.Region;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 
 public class VoteSessionController {
 

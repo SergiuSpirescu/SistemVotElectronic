@@ -3,7 +3,6 @@ package com.marjacu.sistemvotelectronic.Model.JSONHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marjacu.sistemvotelectronic.Model.VoteSession;
 import com.marjacu.sistemvotelectronic.Model.VoteSessionContainer;
-
 import java.io.File;
 import java.io.IOException;
 
