@@ -35,6 +35,7 @@ public class VoteExitController {
         stage.setOpacity(1.0);
         // Start transition
         Platform.runLater(() -> {
+            VoteSessionController.resetSelection();
             stage.show(); // Show the stage first (ensure the full-screen transition happens after)
 
             // Apply the fade-in transition after the stage is visible

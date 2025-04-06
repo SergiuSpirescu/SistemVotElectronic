@@ -173,4 +173,9 @@ public class VoteSessionController {
             VoteSession.getInstance().getConfirmedVotes();
         });
     }
+
+    public static void resetSelection() {
+        selectedButtons.clear();
+    }
+
 }
