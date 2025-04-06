@@ -36,7 +36,7 @@ public class VoteSessionController {
 
     @FXML
     private Button finishButton;
-    private BooleanProperty finished = new SimpleBooleanProperty(false);
+    private final BooleanProperty finished = new SimpleBooleanProperty(false);
 
     public void onExitButton(ActionEvent actionEvent) {
         System.out.println("Aplicatie oprita din butonul X din: Sesiune Vot");
